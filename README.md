@@ -9,16 +9,16 @@
 
 <!-- ------------------ SECTION ------------------ -->
 <p align="left">
-  <a href="https://github.com/genomicsITER/influenza" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/logos_GH.png" width="auto" /> 
+  <a href="https://github.com/genomicsITER/RSV" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/logos_GH.png" width="auto" /> 
       </a>
 </p>
 
-# Influenza
+# Respiratory Syncytial Virus
 
 The COVID-19 pandemic has shown the impact of genomic surveillance of emergent and re-emergent pathogens based on Next Generation Sequencing (NGS), as has been recognized by the World Health Organization [1,2]. Guiding the Public Health response has been accelerated thanks to the generalization of the NGS, allowing the identification and monitoring of emerging SARS-CoV-2 variants in a routine basis accross the World.
 
-Here we present a public repository of Influenza (Inf) related resources maintained by ITER-FIISC-HUNSC- task force.
+Here we present a public repository of **Respiratory Syncytial Virus** related resources maintained by ITER-FIISC-HUNSC- task force.
 
 This is the result of a continuous collaborative effort of the following Institutions and Laboratories:
 <ul>
@@ -33,12 +33,12 @@ This is the result of a continuous collaborative effort of the following Institu
 
 # Table of contents #
 <ul>
-  <li><a href="#Virological-posts"><!-- Virological post: -->A draft of the first Influenza genomes from the Canary Islands, Spain, 2022-2023</a></li>
-  <li><a href="#Protocols">Protocols for library preparation and sequencing of Influenza viral genomes</a></li>
+  <li><a href="#Virological-posts">A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023</a></li>
+  <li><a href="#Protocols">Protocols for library preparation and sequencing of RSV viral genomes</a></li>
       <ul>
           <li><a href="#Illumina-protocol">Illumina-based protocol</a></li>
           <li><a href="#ONT-protocol">ONT-based protocol</a></li>
-          <li><a href="#PCR-universal-primers">PCR universal primers</a></li>
+          <li><a href="#PCR-primers">PCR primers</a></li>
       </ul>
  <li><a href="#Bioinformatic pipelines">Bioinformatic pipelines</a></li>
       <ul>
@@ -48,10 +48,7 @@ This is the result of a continuous collaborative effort of the following Institu
            <li><a href="#Useful-Files">Useful files for the pipelines (FASTA references, BED files, etc.)</a></li>
       </ul>
   <li><a href="#Sequences-and-Classification-Results">Sequences and Classification Results</a></li>
- 
-  <!-- <li><a href="#How-to-GenBank">How to download sequences and metadata from GenBank</a></li> -->
- 
-  <li><a href="#Other-repos">Other useful repositories with resources to study Influenza</a></li>
+  <li><a href="#Other-repos">Other useful repositories with resources to study RSV</a></li>
   <li><a href="#References">References</a></li>
   <li><a href="#Acknowledgements">Acknowledgements</a></li>
   <li><a href="#License and Attribution">License and Attribution</a></li>
@@ -64,33 +61,29 @@ This is the result of a continuous collaborative effort of the following Institu
 <!-- ------------------ SECTION 1 ------------------ -->
 
 <a name="Virological-posts"></a>
-## <!-- Virological post: -->A draft of the first Influenza genomes from the Canary Islands, Spain, 2022-2023 ##
+## A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023 ##
 
-<!-- A technical post with the draft of the first Influenza genomes from the Canary Islands, Spain, will be shared through Virological shortly. Keep reading! [Here.](https://virological.org/) 
--->
-
-The first genome sequences of Influenza virus A/H1N1, A/H3N2, and B (Victoria) described by us are phylogenetically related to the multiple viral genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to the past 2022-2023 seasonal flu wave in the Northern hemisphere, as shown in Figures 1 and 2.
+The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [1]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple viral genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to the past 2022-2023 seasonal RSV wave in the Northern hemisphere, as shown in Figures 1 and 2.
 
 <p align="center">
   <a href="#Influenza" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/figures/Tree_Influenza_A-H1N1_CanaryIslands_Spain_EN.png" width="auto" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_RSV-A_CanaryIslands_Spain_EN.png" width="auto" />
   </a>
 </p>
 
-**Figure 1**. A phylogenetic tree depicting the position of the genome draft of Influenza A/H1N1 isolated in the period November-December 2022, from patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the HA gene and Influenza A H1N1pdm HA [<a href="https://www.ncbi.nlm.nih.gov/nuccore/CY121680">A/California/07/2009 (CY121680)</a>] as reference.
-
+**Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A isolated in the period November-December 2022, from pediatric patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/A/England/397/2017' (EPI_ISL_412866) reference.
 
 <p align="center">
   <a href="#Influenza" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/figures/Tree_Influenza_A-H3N2_CanaryIslands_Spain_EN.png" width="auto" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_RSV-B_CanaryIslands_Spain_EN.png" width="auto" />
   </a>
 </p>
 
-**Figure 2**. A phylogenetic tree depicting the position of the genome draft of Influenza A/H3N2 isolated in the period October-December 2022, from patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the HA gene and Influenza A H3N2 HA [<a href="https://www.ncbi.nlm.nih.gov/nuccore/CY163680">A/Wisconsin/67/2005 (CY163680)</a>] as reference.
+**Figure 2**. A phylogenetic tree depicting the position of the genome draft of RSV-B isolated in the period November-December 2022, from pediatric patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/B/Australia/VIC-RCH056/2019' (EPI_ISL_1653999) reference.
 
 <p align="right">
   <a href="#Influenza" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -98,7 +91,7 @@ The first genome sequences of Influenza virus A/H1N1, A/H3N2, and B (Victoria) d
 <!-- ------------------ SECTION 2 ------------------ -->
 
 <a name="Protocols"></a>
-## Protocols for library preparation and sequencing of Influenza viral genomes ##
+## Protocols for library preparation and sequencing of RSV genomes ##
 
 <a name="Illumina-protocol"></a>
 **Illumina-based protocol**
@@ -371,6 +364,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 ## References ##
 
 <ol>
+<li>Stein RT, Bont LJ, Zar H, et al. Respiratory syncytial virus hospitalization and mortality: Systematic review and meta-analysis. Pediatr Pulmonol. 2017;52(4):556-569. <a href="https://doi.org/10.1002/ppul.23570">doi:10.1002/ppul.23570</a>.</li>
 <li><a href="https://www.who.int/publications/i/item/9789240018440">Genomic sequencing of SARS-CoV-2. A guide to implementation for maximum impact on public health</a>, WHO, January 8, 2021.</li>
 <li><a href="https://apps.who.int/iris/handle/10665/3"> Report “Global genomic surveillance strategy for pathogens with pandemic and epidemic potential, 2022-2032”</a>. Ginebra, WHO, 2022.</li>
 <li>Zhou B, Wentworth DE. Influenza A virus molecular virology techniques. Methods Mol Biol. 2012;865:175-192. doi:<a href="https://link.springer.com/protocol/10.1007/978-1-61779-621-0_11">10.1007/978-1-61779-621-0_11</a>.</li>
