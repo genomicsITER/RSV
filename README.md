@@ -61,7 +61,7 @@ This is the result of a continuous collaborative effort of the following Institu
 <!-- ------------------ SECTION 1 ------------------ -->
 
 <a name="Virological-posts"></a>
-## A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023 ##
+## A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023
 
 The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [3]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to the past 2022-2023 seasonal RSV wave in the Northern hemisphere, as shown in Figures 1 and 2.
 
@@ -91,7 +91,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 <!-- ------------------ SECTION 2 ------------------ -->
 
 <a name="Protocols"></a>
-## Protocols for library preparation and sequencing of RSV genomes ##
+## Protocols for library preparation and sequencing of RSV genomes
 
 <a name="Illumina-protocol"></a>
 **Illumina-based protocol**
@@ -134,7 +134,7 @@ PCR Universal Primers from Zhout et al. (<a href="https://link.springer.com/prot
 <!-- ------------------ SECTION 3 ------------------ -->
 
 <a name="Bioinformatic pipelines"></a>
-## Bioinformatic pipelines ##
+## Bioinformatic pipelines
 
 The following diagram (Figure 3) represents a full pipeline used to derive the consensus FASTA sequence of RSV viruses using short-read Illumina sequencing.
 
@@ -203,9 +203,9 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 <hr>
 
 <a name="Useful-Files"></a>
-**Useful files for the pipelines**
+## Useful files for the pipelines
 
-**Reference sequences**
+### Reference sequences
 
 |RSV-A|RSV-B|
 |:---:|:---:|
@@ -213,11 +213,11 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 
 <br>
 
-**BED files**
+### BED and FASTA files
 
-Primer schemes in BED format are required in the trimming step of PCR-primers.
+Primer schemes files (BED and FASTA) are required in the trimming step of PCR-primers.
 
-Example of a BED file for segment 1 (FJ984387.1) of Influenza A virus (A/California/07/2009(H1N1)) using the <a href="#PCR-universal-primers">primer-scheme</a>:
+Example of a <code>BED file</code> for segment 1 (FJ984387.1) of influenza A virus (A/California/07/2009(H1N1)) using the <a href="#PCR-universal-primers">primer-scheme</a>:
 
 ```
 FJ984387.1	1	12	Seg1_Uni12/Inf-1_LEFT	1	+	GGGGGGAGCAAAAGCAGG
@@ -226,17 +226,11 @@ FJ984387.1	2268	2280	Seg1_Uni13/Inf-1_RIGHT	1	-	CGGGTTATTAGTAGAAACAAGG
 FJ984387.1	1	14	Seg1_B-Pbs-UniF_LEFT	1	+	GGGGGGAGCAGAAGCGGAGC
 FJ984387.1	2266	2280	Seg1_B-Pbs-UniF_RIGHT	1	-	CCGGGTTATTAGTAGAAACACGAGC
 ```
+<br>
 
-Please, download the BED files **separately** (one file per Influenza segment).
-
-|Virus strain|Seg-1|Seg-2|Seg-3|Seg-4|Seg-5|Seg-6|Seg-7|Seg-8|
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Inf. A virus (A/California/07/2009(H1N1))|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg1.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png"  style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg2.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg3.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg4.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg5.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg6.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg7.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H1N1/Influenza_A_H1N1_A_California_07_2009.seg8.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a> | 
-|Inf. A virus (A/Wisconsin/67/2005(H3N2))|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg1.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg2.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg3.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg4.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg5.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg6.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg7.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/H3N2/Influenza_A_H3N2_A_Wisconsin_67_2005.seg8.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|
-|Inf. B virus Victoria (B/Brisbane/60/2008)|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg1.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg2.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg3.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg4.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg5.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg6.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg7.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Victoria/Influenza_B_Brisbane_60_2008.seg8.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|
-|Inf. B virus Yamagata (B/Wisconsin/01/2010)|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg1.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg2.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg3.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg4.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg5.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg6.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg7.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/Yamagata/Influenza_B_Wisconsin_01_2005.seg8.primer_scheme.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file" /></a>|
-
-
+|RSV Subtype|BED|FASTA|
+|:..:||:..:|:..:|
+|RSV-A|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/RSV_A_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/RSV_A_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>||RSV-B|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/RSV_B_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/RSV_B_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>|
 
 <br>
  
