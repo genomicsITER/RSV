@@ -377,7 +377,7 @@ This study has been funded by Cabildo Insular de Tenerife (CGIEU0000219140 and "
 
 This study is also an activity within the project Consolidation of WGS and RT-PCR activities for SARS-CoV-2 in Spain towards sustainable use and integration of enhanced infrastructure and capacities in the RELECOV network (101113109 - RELECOV 2.0) of the EU4Health Programme (EU4H) by the European Health and Digital Executive Agency (HaDEA), under the coordination of Instituto de Salud Carlos III (ISCIII).
 
-We acknowledge the researchers and their institutions who released influenza sequences through NCBI GenBank, GISAID, and ENA that are being used in our studies. 
+We acknowledge the researchers and their institutions who released RSV sequences through NCBI GenBank, GISAID, and ENA that are being used in our studies. 
 
 We also thank the authors, the laboratories that originated and submitted the genetic sequences and the metadata for sharing their work, as shown on Nextstrain, and:
 <ul>
