@@ -66,7 +66,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 
 <p align="center">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-A_CanaryIslands_Spain_EN.png" style="width:500px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-A_CanaryIslands_Spain_EN.png" width="50%" />
   </a>
 </p>
 
@@ -74,7 +74,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 
 <p align="center">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-B_CanaryIslands_Spain_EN.png" style="width:500px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-B_CanaryIslands_Spain_EN.png" width="50%" />
   </a>
 </p>
 
