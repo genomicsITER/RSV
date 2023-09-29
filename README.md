@@ -104,7 +104,7 @@ Davina-Nunez et al. [7] have adapted the Illumina COVIDSeq™ Assay (RUO) kit to
 <a name="ONT-protocol"></a>
 **Oxford Nanopore Technologies-based protocol**
 
-Working in progress. Come back by the end of December 2023 to find new stuff in this section.
+_Work in progress_. Come back by the end of December 2023 to find new stuff in this section.
 
 <hr>
           
