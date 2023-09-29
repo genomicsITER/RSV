@@ -1,4 +1,4 @@
- <a name="RSV"></a> 
+![image](https://github.com/genomicsITER/RSV/assets/23115956/bc1bc0e3-213d-48e0-a599-104da79f21a0) <a name="RSV"></a> 
  
 <!-- ------------------ HEADER ------------------ -->
 <!-- Developed and maintained by Genomics Division
@@ -119,7 +119,7 @@ PCR Universal Primers from Zhout et al. (<a href="https://link.springer.com/prot
 
 <p align="center">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Influenza_Zhou-2012-2014_Universal_Primers.png" width="75%" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/hRSV-A-B_Primers.png" width="75%" />
   </a>
 </p>
 
