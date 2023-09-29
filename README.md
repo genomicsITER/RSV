@@ -115,7 +115,7 @@ PCR primers from Davina-Nunez et al. [7] have been used. These primers allows th
 
 <p align="center">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/hRSV-A-B_Primers.png" width="75%" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/hRSV-A-B_Primers.png" width="500" />
   </a>
 </p>
 
