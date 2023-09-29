@@ -1,4 +1,4 @@
- <a name="Influenza"></a> 
+ <a name="RSV"></a> 
  
 <!-- ------------------ HEADER ------------------ -->
 <!-- Developed and maintained by Genomics Division
@@ -14,11 +14,11 @@
       </a>
 </p>
 
-# Respiratory Syncytial Virus
+# Respiratory Syncytial Virus genomic surveillance in the Canary Islands
 
-The COVID-19 pandemic has shown the impact of genomic surveillance of emergent and re-emergent pathogens based on Next Generation Sequencing (NGS), as has been recognized by the World Health Organization [1,2]. Guiding the Public Health response has been accelerated thanks to the generalization of the NGS, allowing the identification and monitoring of emerging SARS-CoV-2 variants in a routine basis accross the World.
+The COVID-19 pandemic has shown the impact of genomic surveillance of emergent and re-emergent pathogens based on Next Generation Sequencing (NGS), as has been recognized by the World Health Organization [1,2]. Guiding the Public Health response has been accelerated thanks to the generalization of the NGS, allowing the identification and monitoring of emerging SARS-CoV-2 variants in a routine basis across the World.
 
-Here we present a public repository of **Respiratory Syncytial Virus** related resources maintained by ITER-FIISC-HUNSC- task force.
+Here we present a public repository of **Respiratory Syncytial Virus** related resources maintained by ITER-FIISC-HUNSC-ULL task force.
 
 This is the result of a continuous collaborative effort of the following Institutions and Laboratories:
 <ul>
@@ -63,26 +63,26 @@ This is the result of a continuous collaborative effort of the following Institu
 <a name="Virological-posts"></a>
 ## A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023 ##
 
-The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [3]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple viral genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to the past 2022-2023 seasonal RSV wave in the Northern hemisphere, as shown in Figures 1 and 2.
+The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [3]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to the past 2022-2023 seasonal RSV wave in the Northern hemisphere, as shown in Figures 1 and 2.
 
 <p align="center">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_RSV-A_CanaryIslands_Spain_EN.png" width="auto" />
   </a>
 </p>
 
-**Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A isolated in the period November-December 2022, from pediatric patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/A/England/397/2017' (EPI_ISL_412866) reference.
+**Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A sampled in the period November-December 2022, from pediatric patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/A/England/397/2017' (EPI_ISL_412866) reference.
 
 <p align="center">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_RSV-B_CanaryIslands_Spain_EN.png" width="auto" />
   </a>
 </p>
 
-**Figure 2**. A phylogenetic tree depicting the position of the genome draft of RSV-B isolated in the period November-December 2022, from pediatric patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/B/Australia/VIC-RCH056/2019' (EPI_ISL_1653999) reference.
+**Figure 2**. A phylogenetic tree depicting the position of the genome draft of RSV-B sampled in the period November-December 2022, from pediatric patients from the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/B/Australia/VIC-RCH056/2019' (EPI_ISL_1653999) reference.
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -118,14 +118,14 @@ PCR Universal Primers from Zhout et al. (<a href="https://link.springer.com/prot
 
 
 <p align="center">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/figures/Influenza_Zhou-2012-2014_Universal_Primers.png" width="75%" />
   </a>
 </p>
 
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -237,7 +237,7 @@ Please, download the BED files **separately** (one file per Influenza segment).
 <br>
  
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -253,43 +253,48 @@ Please, download the BED files **separately** (one file per Influenza segment).
 
 Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You may search in GISAID by using the accession codes provided or directly download our Influenza sequences using the links provided below.
 
-**Sequences of Influenza A/H1N1**
+**Sequences of RSV A**
   <ul>
-    <li>Accesion 1: <a href="https://github.com/genomicsITER/influenza/blob/main/sequences/A/H1N1/gisaid_epiflu_A_Spain_CN-HUNSC_ITER_150368383_2022.fasta">EPI_ISL_18128205</a></li>
-    <li>Accesion 2: <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/A/H1N1/gisaid_epiflu_A_Spain_CN-HUNSC_ITER_150369675_2022.fasta">EPI_ISL_18308442</a></li>
-    <li>Accesion 3: <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/A/H1N1/gisaid_epiflu_A_Spain_CN-HUNSC_ITER_150372413_2022.fasta">EPI_ISL_18308501</a></li>
+    <li>Accesion 1: <a href="https://github.com/genomicsITER/RSV/blob/main/sequences/RSV-A/EPI_ISL_183215332.fasta">EPI_ISL_18321533</a></li>
+    <li>Accesion 2: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-A/EPI_ISL_18321558.fasta">EPI_ISL_18321558</a></li>
   </ul>
 
-**Sequences of Influenza A/H3N2**
+**Sequences of RSV B**
   <ul>
-    <li>Accesion 4: <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/A/H3N2/gisaid_epiflu_A_Spain_CN-HUNSC_ITER_150368334_2022.fasta">EPI_ISL_18313569</li>
-    <li>Accesion 5: <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/A/H3N2/gisaid_epiflu_A_Spain_CN-HUNSC_ITER_150369410_2022.fasta">EPI_ISL_18313571</li>
-    <li>Accesion 6: <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/A/H3N2/gisaid_epiflu_A_Spain_CN-HUNSC_ITER_150369722_2022.fasta">EPI_ISL_18313572</li>
+    <li>Accesion 3: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323795.fasta">EPI_ISL_18323795</li>
+    <li>Accesion 4: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323796.fasta">EPI_ISL_18323796</li>
+    <li>Accesion 5: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323797.fasta">EPI_ISL_18323797</li>
+    <li>Accesion 6: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323798.fasta">EPI_ISL_18323798</li>
   </ul>
 
-**Sequences of Influenza B Victoria**
-  <ul>
-    <li>Accesion 7: <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/B/Victoria/gisaid_epiflu_B_Spain_CN-HUNSC_ITER_150387165_2023.fasta">EPI_ISL_18313574 </li>
-  </ul>
+  (*) NOTE: Some sequence/s may be incomplete.
 
-  (*) NOTE: Some segment/s sequence/s may be incomplete.
+  <br>
+
+EPI_ISL_18321533 
+EPI_ISL_18321558 
+EPI_ISL_18323795
+EPI_ISL_18323796
+EPI_ISL_18323797
+EPI_ISL_18323798
+
+![image](https://github.com/genomicsITER/RSV/assets/23115956/92d001da-4211-487a-9bd5-93da1dbba349)
 
 ## Classification Results ##
 
-|GISAID accession|Isolate name|Subtype|Clade|Location|
+|GISAID accession|Isolate name|RSV Subtype|Clade|Location|
 |:---|:---:|:---:|:---:|:---:|
-|EPI_ISL_18128205|A/Spain/CN-HUNSC_ITER|A/H1N1|6B.1A.5a.2a|Europe/Spain/Canary Islands|
-|EPI_ISL_18308442|A/Spain/CN-HUNSC_ITER|A/H1N1|6B.1A.5a.2a.1|Europe/Spain/Canary Islands|
-|EPI_ISL_18308501|A/Spain/CN-HUNSC_ITER|A/H1N1|6B.1A.5a.2a.1|Europe/Spain/Canary Islands|
-|EPI_ISL_18313569|A/Spain/CN-HUNSC_ITER|A/H3N2|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
-|EPI_ISL_18313571|A/Spain/CN-HUNSC_ITER|A/H3N2|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
-|EPI_ISL_18313572|A/Spain/CN-HUNSC_ITER|A/H3N2|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
-|EPI_ISL_18313574|B/Spain/CN-HUNSC_ITER|B|V1A.3a.2|Europe/Spain/Canary Islands|
+|EPI_ISL_18321533|A/Spain/CN-HUNSC_ITER|A|6B.1A.5a.2a|Europe/Spain/Canary Islands|
+|EPI_ISL_18321558|A/Spain/CN-HUNSC_ITER|A|6B.1A.5a.2a.1|Europe/Spain/Canary Islands|
+|EPI_ISL_18323795|A/Spain/CN-HUNSC_ITER|B|6B.1A.5a.2a.1|Europe/Spain/Canary Islands|
+|EPI_ISL_18323796|A/Spain/CN-HUNSC_ITER|B|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
+|EPI_ISL_18323797|A/Spain/CN-HUNSC_ITER|B|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
+|EPI_ISL_18323798|A/Spain/CN-HUNSC_ITER|B|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
 
 (*) NOTE: other metadata are available for these samples in <a href="https://gisaid.org/">GISAID</a> and from the authors upon a reasonable request.
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -323,7 +328,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -351,7 +356,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 </ul>
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -376,7 +381,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 </ol>
   
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -388,11 +393,11 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <a name="Acknowledgements"></a>
 ## Acknowledgements ##
 
-This study has been funded by Cabildo Insular de Tenerife (CGIEU0000219140 and "_Apuestas científicas del ITER para colaborar en la lucha contra la COVID-19_"), Instituto de Salud Carlos III (FI18/00230) cofunded by European Union (ERDF) "_A way of making Europe_", by the agreement with Instituto Tecnológico y de Energías Renovables (ITER) to strengthen scientific and technological education, training, research, development and innovation in Genomics, Personalized Medicine and Biotechnology (OA17/008); and by the agreement between Consejería de Educación, Universidades, Cultura y Deportes del Gobierno de Canarias y Cabildo Insular de Tenerife, 2022-2025.
+This study has been funded by Cabildo Insular de Tenerife (CGIEU0000219140 and "_Apuestas científicas del ITER para colaborar en la lucha contra la COVID-19_"); by the agreement with Instituto Tecnológico y de Energías Renovables (ITER) to strengthen scientific and technological education, training, research, development and innovation in Genomics, epidemiological surveillance based on massive sequencing, Personalized Medicine and Biotechnology (OA17/008 and OA23/043); and by the agreement between Consejería de Educación, Universidades, Cultura y Deportes del Gobierno de Canarias y Cabildo Insular de Tenerife, 2022-2025 (AC0000014697).
 
-This study is also an activity within the project _Consolidation of WGS and RT-PCR activities for SARS-CoV-2 in Spain towards sustainable use and integration of enhanced infrastructure and capacities in the RELECOV network (RELECOV 2.0)_ of the EU4Health Programme (EU4H), under the coordination of Instituto de Salud Carlos III (ISCIII).
+This study is also an activity within the project Consolidation of WGS and RT-PCR activities for SARS-CoV-2 in Spain towards sustainable use and integration of enhanced infrastructure and capacities in the RELECOV network (101113109 - RELECOV 2.0) of the EU4Health Programme (EU4H) by the European Health and Digital Executive Agency (HaDEA), under the coordination of Instituto de Salud Carlos III (ISCIII).
 
-We acknowledge the researchers and their institutions who released Influenza sequences through NCBI GenBank, GISAID, and ENA that are being used in our studies. 
+We acknowledge the researchers and their institutions who released influenza sequences through NCBI GenBank, GISAID, and ENA that are being used in our studies. 
 
 We also thank the authors, the laboratories that originated and submitted the genetic sequences and the metadata for sharing their work, as shown on Nextstrain, and:
 <ul>
@@ -403,7 +408,7 @@ We also thank the authors, the laboratories that originated and submitted the ge
 <!-- We would like to acknowledge the contributions of several researchers and laboratories who share their preliminary results through the [Virological](https://virological.org/) website. -->
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -420,7 +425,7 @@ This repository and data exports are released under the CC BY 4.0 license. Pleas
 Please cite this repository as: _"Influenza repository of the Reference Laboratory for Epidemiological Surveillance of Pathogens in the Canary Islands (accessed on YYYY-MM-DD)"_. And do not forget to <a href="#How-to-cite">cite the paper</a> (see the section "How to cite" below) when it becomes available. 
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -445,7 +450,7 @@ By AMB <a href="https://twitter.com/adrmunozb" title="Follow to @resocios on Twi
 Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @labcflores on Twitter" > @labcflores<img src="https://github.com/genomicsITER/influenza/blob/main/images/Twitter_Social_Icon_Circle_Color.png" width="32px" /></a>
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -462,7 +467,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 > To use the deposited sequences at GISAID, please, acknowledge this work as recommended by GISAID. Find the 'GISAID acknowledge tables' <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/acknowledgements">here</a>.
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
@@ -481,7 +486,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 > July 26, 2023. Created the private version of this repository.
 
 <p align="right">
-  <a href="#Influenza" title="Up">
+  <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
