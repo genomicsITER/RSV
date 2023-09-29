@@ -111,8 +111,8 @@ Working in progress. Come back by the end of December 2023 to find new stuff in 
 
 <hr>
           
-<a name="PCR-universal-primers"></a>
-**PCR universal primers**
+<a name="PCR-primers"></a>
+**PCR primers**
 
 PCR Universal Primers from Zhout et al. (<a href="https://link.springer.com/protocol/10.1007/978-1-61779-621-0_11">2012</a>, <a href="https://doi.org/10.1128/jcm.03265-13">2014</a>).
 
@@ -217,21 +217,42 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 
 Primer schemes files (BED and FASTA) are required in the trimming step of PCR-primers.
 
-Example of a <code>BED file</code> for segment 1 (FJ984387.1) of influenza A virus (A/California/07/2009(H1N1)) using the <a href="#PCR-universal-primers">primer-scheme</a>:
+Example of a <code>BED file</code> for hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01 using the <a href="#PCR-primers">primer-scheme</a>:
 
 ```
-FJ984387.1	1	12	Seg1_Uni12/Inf-1_LEFT	1	+	GGGGGGAGCAAAAGCAGG
-FJ984387.1	1	12	Seg1_Uni12/Inf-3_LEFT	1	+	GGGGGGAGCGAAAGCAGG
-FJ984387.1	2268	2280	Seg1_Uni13/Inf-1_RIGHT	1	-	CGGGTTATTAGTAGAAACAAGG
-FJ984387.1	1	14	Seg1_B-Pbs-UniF_LEFT	1	+	GGGGGGAGCAGAAGCGGAGC
-FJ984387.1	2266	2280	Seg1_B-Pbs-UniF_RIGHT	1	-	CCGGGTTATTAGTAGAAACACGAGC
+hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	1	22	RSV_A_1_pool1_LEFT	60	-
+hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	1752	1779	RSV_A_1_pool1_RIGHT	60	+
+hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	1556	1576	RSV_A_2_pool2_LEFT	60	-
+hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	3377	3400	RSV_A_2_pool2_RIGHT	60	+
+hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	2897	2919	RSV_A_3_pool1_LEFT	60	-
+hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	4802	4826	RSV_A_3_pool1_RIGHT	60	+
+etc
 ```
+
+Example of the <code>FASTA file</code> paired with the corresponding<code>BED file</code> for hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01 using the <a href="#PCR-primers">primer-scheme</a>:
+
+```
+>RSV_A_1_pool1_LEFT
+ACGSGAAAAAATGCGTACAAC
+>RSV_A_1_pool1_RIGHT
+GAAGATTGTGCTATACCAAAATGAACA
+>RSV_A_2_pool2_LEFT
+ACAGGCATGACTCTCCTGAT
+>RSV_A_2_pool2_RIGHT
+TTGGGTGTGGATATTTGTTTCAC
+>RSV_A_3_pool1_LEFT
+GCYATGGCAAGACTYAGGAATG
+>RSV_A_3_pool1_RIGHT
+GTTTGCYGAGGCTATGAATATGAT
+etc
+```
+
 <br>
 
 |RSV Subtype|BED|FASTA|
 |:---:|:---:|:---:|
-|RSV-A|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/RSV_A_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/A/RSV_A_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>|
-|RSV-B|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/RSV_B_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/influenza/blob/main/primer_schemes/B/RSV_B_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>|
+|RSV-A|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/A/RSV_A_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/A/RSV_A_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>|
+|RSV-B|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/B/RSV_B_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/B/RSV_B_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>|
 
 <br>
  
