@@ -37,7 +37,7 @@ This is the result of a continuous collaborative effort of the following Institu
   <li><a href="#Protocols">Protocols for library preparation and sequencing of RSV viral genomes</a></li>
       <ul>
           <li><a href="#Illumina-protocol">Illumina-based protocol</a></li>
-          <li><a href="#ONT-protocol">ONT-based protocol</a></li>
+          <li><a href="#ONT-protocol">Oxford Nanopore Technologies-based protocol</a></li>
           <li><a href="#PCR-primers">PCR primers</a></li>
       </ul>
  <li><a href="#Bioinformatic pipelines">Bioinformatic pipelines</a></li>
@@ -105,7 +105,7 @@ According to Lin Y. et al., this protocol provides accurate information for subt
 <hr>
 
 <a name="ONT-protocol"></a>
-**ONT-based protocol**
+**Oxford Nanopore Technologies-based protocol**
 
 Working in progress. Come back by the end of December 2023 to find new stuff in this section.
 
@@ -119,7 +119,7 @@ PCR Universal Primers from Zhout et al. (<a href="https://link.springer.com/prot
 
 <p align="center">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/figures/Influenza_Zhou-2012-2014_Universal_Primers.png" width="75%" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Influenza_Zhou-2012-2014_Universal_Primers.png" width="75%" />
   </a>
 </p>
 
@@ -136,35 +136,35 @@ PCR Universal Primers from Zhout et al. (<a href="https://link.springer.com/prot
 <a name="Bioinformatic pipelines"></a>
 ## Bioinformatic pipelines ##
 
-The following diagram (Figure 3) represents a full pipeline used to derive the consensus FASTA sequence of influenza viruses using short-reads Illumina sequencing technology. A complementary pipeline is being designed and will be shown here by October 2023.
+The following diagram (Figure 3) represents a full pipeline used to derive the consensus FASTA sequence of RSV viruses using short-read Illumina sequencing.
 
-In the upper part of the diagram, there is a typical pipeline to process short-reads, from the basecalling to the final consensus FASTA sequence, and downstream analysis such as the phylogenetic inference.
+In the upper part of the diagram, there is a typical pipeline to process short reads, from the basecalling to the final consensus FASTA sequence, and downstream analysis such as the phylogenetic inference.
 
-In the lower part of the diagram, it is shown a typical pipeline to process long-reads. In addition, it shows how to perform a hybrid *de novo* assembly combining short- and long-reads.
+In the lower part of the diagram, a typical pipeline to process long reads. In addition, it is shown how to perform a hybrid *de novo* genomeassembly combining short and long reads.
 
-Several consensus Influenza A/H1N1 and A/H3N2 sequences derived from the pipeline based on mapping of Illumina short-reads against an Influenza reference genome have been obtained so far. They have been deposited in GISAID EpiFlu (see <a href="#Sequences">'Sequences'</a> section below).
+Several consensus RSV A and B sequences derived from the pipeline based on mapping of Illumina short reads against a RSV (A or B) reference genome have been obtained so far. They have been deposited in GISAID EpiRSV (see <a href="#Sequences">'Sequences'</a> section below).
 
 <p align="center">
-  <a href="https://github.com/genomicsITER/influenza" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/figures/Influenza_pipeline.png" width="auto" /> 
+  <a href="https://github.com/genomicsITER/RSV" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/RSV_pipeline.png" width="auto" /> 
   </a>
 </p>
 
-**Figure 3**. Full bioinformatic pipeline to obtain the Influenza sequences and to infer phylogenetic relationships with other Influenza viral genomes available obtained from public repositories as provided by Nextstrain.
+**Figure 3**. Full bioinformatic pipeline to obtain the RSV sequences and to infer phylogenetic relationships with other RSV genomes available obtained from public repositories as provided by Nextstrain.
 
 <hr>
 
 <a name="Code-Illumina"></a>
 **Code for Illumina short-reads processing**
 
-<a href="https://github.com/genomicsITER/influenza/blob/main/codes/code_Illumina_pipeline.md"><img src="https://github.com/genomicsITER/influenza/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Illumina short-reads](https://github.com/genomicsITER/influenza/blob/main/codes/code_Illumina_pipeline.md).
+<a href="https://github.com/genomicsITER/RSV/blob/main/codes/code_Illumina_pipeline.md"><img src="https://github.com/genomicsITER/RSV/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Illumina short reads](https://github.com/genomicsITER/influenza/blob/main/codes/code_Illumina_pipeline.md).
 
 <!-- 
 
 <hr>
 
 <a name="Code-ONT"></a>
-**Code for Nanopore long-reads processing and hybrid *de novo* assemby**
+**Code for Nanopore long-reads processing and hybrid *de novo* genome assemby**
 
 <a href="https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT-and-HybridAssembly_pipeline.md"><img src="https://github.com/genomicsITER/monkeypox/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Oxford Nanopore Technology long-reads](https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT-and-HybridAssembly_pipeline.md).
 
@@ -251,45 +251,36 @@ Please, download the BED files **separately** (one file per Influenza segment).
 
 ## Deposited sequences ##
 
-Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You may search in GISAID by using the accession codes provided or directly download our Influenza sequences using the links provided below.
+Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You may search in GISAID by using the accession codes provided or proceed directly downloading our RSV sequences using the links provided below.
 
-**Sequences of RSV A**
+**Sequences of RSV-A**
   <ul>
-    <li>Accesion 1: <a href="https://github.com/genomicsITER/RSV/blob/main/sequences/RSV-A/EPI_ISL_183215332.fasta">EPI_ISL_18321533</a></li>
-    <li>Accesion 2: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-A/EPI_ISL_18321558.fasta">EPI_ISL_18321558</a></li>
+    <li>Accesion 1: <a href="https://github.com/genomicsITER/RSV/blob/main/sequences/RSV-A/EPI_ISL_18321533" title="Download FASTA" >EPI_ISL_18321533</a></li>
+    <li>Accesion 2: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-A/EPI_ISL_18321558" title="Download FASTA" >EPI_ISL_18321558</a></li>
   </ul>
 
-**Sequences of RSV B**
+**Sequences of RSV-B**
   <ul>
-    <li>Accesion 3: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323795.fasta">EPI_ISL_18323795</li>
-    <li>Accesion 4: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323796.fasta">EPI_ISL_18323796</li>
-    <li>Accesion 5: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323797.fasta">EPI_ISL_18323797</li>
-    <li>Accesion 6: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323798.fasta">EPI_ISL_18323798</li>
+    <li>Accesion 3: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323795" title="Download FASTA" >EPI_ISL_18323795</li>
+    <li>Accesion 4: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323796" title="Download FASTA" >EPI_ISL_18323796</li>
+    <li>Accesion 5: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323797" title="Download FASTA" >EPI_ISL_18323797</li>
+    <li>Accesion 6: <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/RSV-B/EPI_ISL_18323798" title="Download FASTA" >EPI_ISL_18323798</li>
   </ul>
 
   (*) NOTE: Some sequence/s may be incomplete.
 
   <br>
 
-EPI_ISL_18321533 
-EPI_ISL_18321558 
-EPI_ISL_18323795
-EPI_ISL_18323796
-EPI_ISL_18323797
-EPI_ISL_18323798
-
-![image](https://github.com/genomicsITER/RSV/assets/23115956/92d001da-4211-487a-9bd5-93da1dbba349)
-
 ## Classification Results ##
 
-|GISAID accession|Isolate name|RSV Subtype|Clade|Location|
+|GISAID accession|Isolate name|RSV Subtype|Clade(G_clade)|Location|
 |:---|:---:|:---:|:---:|:---:|
-|EPI_ISL_18321533|A/Spain/CN-HUNSC_ITER|A|6B.1A.5a.2a|Europe/Spain/Canary Islands|
-|EPI_ISL_18321558|A/Spain/CN-HUNSC_ITER|A|6B.1A.5a.2a.1|Europe/Spain/Canary Islands|
-|EPI_ISL_18323795|A/Spain/CN-HUNSC_ITER|B|6B.1A.5a.2a.1|Europe/Spain/Canary Islands|
-|EPI_ISL_18323796|A/Spain/CN-HUNSC_ITER|B|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
-|EPI_ISL_18323797|A/Spain/CN-HUNSC_ITER|B|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
-|EPI_ISL_18323798|A/Spain/CN-HUNSC_ITER|B|3C.2a1b.2a.2b|Europe/Spain/Canary Islands|
+|EPI_ISL_18321533|A/Spain/CN-HUNSC_ITER|A|A23(G_clade:GA2.3.5)|Europe/Spain/Canary Islands|
+|EPI_ISL_18321558|A/Spain/CN-HUNSC_ITER|A|A23(G_clade:GA2.3.5)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323795|A/Spain/CN-HUNSC_ITER|B|B6(G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323796|A/Spain/CN-HUNSC_ITER|B|B6(G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323797|A/Spain/CN-HUNSC_ITER|B|B6(G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323798|A/Spain/CN-HUNSC_ITER|B|B6(G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
 
 (*) NOTE: other metadata are available for these samples in <a href="https://gisaid.org/">GISAID</a> and from the authors upon a reasonable request.
 
@@ -303,58 +294,23 @@ EPI_ISL_18323798
 <hr>
 
 
-<!-- ------------------ SECTION 4 ------------------ -->
-<!--
-<a name="How-to-GenBank"></a>
-## How to download sequences and metadata from GenBank ##
-
-> Manual download
-
-<ol>
-<li>Browse to <a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a>.</li>
-<li>Select '<i>Nucleotide</i>' from the combo box.</li>
-<li>Fill in the accession code of the sequence you want to download (i.e. ON782054) or just write the name of the species (i.e. Monkeypox, and then clic on a certain accession code you are interested in).</li>
-<li>Click on '<i>FASTA</i>' link</li>
-<li>Click on '<i>Send to</i>' on the upper right part of the screen.</li>
-<li>Select the option '<i>file</i>'.</li>
-<li>Select '<i>FASTA</i>' as download format.</li>
-<li>Click on '<i>Generate</i>' button.</li>
-</ol>
-
-> Programmatically download
-
-<a href="https://github.com/genomicsITER/monkeypox/blob/main/codes/code_retrieve-seqs-from-GenBank.md"><img src="https://github.com/genomicsITER/monkeypox/blob/main/images/Code-Window-icon.png" width="32px" /></a>  We provide a full Python code to retrieve all sequences larger than 190,000 bases from GenBank as example. [See the code](https://github.com/genomicsITER/monkeypox/blob/main/codes/code_retrieve-seqs-from-GenBank.md).
-
-
-
-<p align="right">
-  <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
-  </a>
-</p>
-
-
-<hr> -->
-
-
 <!-- ------------------ SECTION 6 ------------------ -->
 
 <a name="Other-repos"></a>
-## Other useful repositories with resources to study Influenza ##
+## Other useful repositories with resources to study RSV
 
-> Kudos to all research teams behind the scenes in all these repositories:
+<details>
+<summary>Kudos to all research teams behind the scenes in all these repositories and web platforms (click to display):</summary>
 
 <ul>
-  <li><a href="https://umasangumathi.github.io/FluLINE/">FluLINE</a></li>
-  <li><a href="https://github.com/hkailee/FluSeq">FluSeq</a></li>
-  <li><a href="https://insaflu.readthedocs.io/en/latest/index.html">INSaFLU</a></li>
-  <li><a href="https://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database">NCBI Influenza Virus Database</a></li>
-  <li><a href="https://clades.nextstrain.org/">Nextclade</a></li>
-  <li><a href="https://nextstrain.org/influenza/">Nextstrain</a></li>
-  <li><a href="https://github.com/peterk87/nf-flu">nf-flu</a></li>
-  <li><a href="https://github.com/greninger-lab/revica">REVICA</a></li>
+  <li><a href="">Repo</a></li>
+  <li><a href="">Repo</a></li>
+  <li><a href="">Repo</a></li>
+  <li><a href="">Repo</a></li>
 </ul>
 
+</details>
+ 
 <p align="right">
   <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
@@ -464,7 +420,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 
 > This work has not been publised yet. See 'License and Attribution' section to cite this repository.
 
-> To use the deposited sequences at GISAID, please, acknowledge this work as recommended by GISAID. Find the 'GISAID acknowledge tables' <a href="https://github.com/genomicsITER/influenza/tree/main/sequences/acknowledgements">here</a>.
+> To use the deposited sequences at GISAID, please, acknowledge this work as recommended by GISAID. Find the 'GISAID acknowledge tables' <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/acknowledgements">here</a>.
 
 <p align="right">
   <a href="#RSV" title="Up">
