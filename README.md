@@ -136,7 +136,7 @@ The following diagram (Figure 3) represents a full pipeline used to derive the c
 
 In the upper part of the diagram, there is a typical pipeline to process short reads, from the basecalling to the final consensus FASTA sequence, and downstream analysis such as the phylogenetic inference.
 
-In the lower part of the diagram, a typical pipeline to process long reads. In addition, it is shown how to perform a hybrid *de novo* genomeassembly combining short and long reads.
+In the lower part of the diagram, a typical pipeline to process long reads is shown. In addition, it shows how to perform a hybrid de novo genome assembly combining short and long reads.
 
 Several consensus RSV A and B sequences derived from the pipeline based on mapping of Illumina short reads against a RSV (A or B) reference genome have been obtained so far. They have been deposited in GISAID EpiRSV (see <a href="#Sequences">'Sequences'</a> section below).
 
