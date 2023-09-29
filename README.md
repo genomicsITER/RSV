@@ -71,7 +71,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
   </a>
 </p>
 
-**Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A sampled in the period February and August 2023, from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/A/England/397/2017' (EPI_ISL_412866) reference.
+**Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A sampled in February and August 2023, from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/A/England/397/2017' (EPI_ISL_412866) reference.
 
 <p align="center">
   <a href="#RSV" title="Up">
