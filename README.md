@@ -95,9 +95,9 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 <a name="Illumina-protocol"></a>
 **Illumina-based protocol**
 
-One of the sequencing strategies followed for SARS-CoV-2 surveillance is the use of amplicons derived from primer pools designed by the ARTIC community following a tiling approach [4,5] (see the <a href="#PCR-primers">PCR-primers</a> section).
+One of the sequencing strategies followed for SARS-CoV-2 surveillance is the use of amplicons derived from primer pools designed by the ARTIC community following a tiling approach [4,5,6] (see the <a href="#PCR-primers">PCR-primers</a> section).
 
-Davina-Nunez et al. [7] have adapted the Illumina COVIDSeq™ Assay (RUO) kit to get the sequence of RSV A and B genomes. Their protocol uses a combination of two nested primer sets covering both RSV-A and RSV-B in the same reaction, followed by the Illumina COVIDSeq™ Assay protocol with minor modifications, and taking advantage of the same reagents included in the kit: <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing V.1</a> at <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">protocols.io</a>.
+Davina-Nunez et al. [7] have adapted the Illumina COVIDSeq™ Assay (RUO) kit to get the sequence of RSV A and B genomes. Their protocol uses a combination of two nested primer sets covering both RSV-A and RSV-B in the same reaction [7,8,9,10], followed by the Illumina COVIDSeq™ Assay protocol with minor modifications, and taking advantage of the same reagents included in the kit: <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing V.1</a> at <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">protocols.io</a>.
 
 <hr>
 
@@ -111,7 +111,7 @@ _Work in progress_. Come back by the end of December 2023 to find new stuff in t
 <a name="PCR-primers"></a>
 **PCR primers**
 
-PCR primers from Davina-Nunez et al. [7] have been used. These primers allows the splitting into two pools of non-consecutive amplicons (odd-numbered amplicon primers in pool-1; even-numbered amplicon primers in pool-2). <a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/hRSV-A-B_Primers.tsv">Download this file</a> in tab-separated format.
+PCR primers from Davina-Nunez et al. [7] (and adapted from Wang et al. [8]) have been used. These primers allows the splitting into two pools of non-consecutive amplicons (odd-numbered amplicon primers in pool-1; even-numbered amplicon primers in pool-2). <a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/hRSV-A-B_Primers.tsv">Download this file</a> in tab-separated format.
 
 <p align="center">
   <a href="#RSV" title="Up">
@@ -349,12 +349,14 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <ol>
 <li><a href="https://www.who.int/publications/i/item/9789240018440">Genomic sequencing of SARS-CoV-2. A guide to implementation for maximum impact on public health</a>, WHO, January 8, 2021.</li>
 <li><a href="https://apps.who.int/iris/handle/10665/3"> Report “Global genomic surveillance strategy for pathogens with pandemic and epidemic potential, 2022-2032”</a>. Ginebra, WHO, 2022.</li>
+<li>Heppe-Montero, M., Walter, S., Hernández-Barrera, V. et al. Burden of respiratory syncytial virus-associated lower respiratory infections in children in Spain from 2012 to 2018. BMC Infect Dis 22, 315 (2022). <a href="https://doi.org/10.1186/s12879-022-07261-1">doi:10.1186/s12879-022-07261-1</a></li>
 <li>Gohl DM, Garbe J, Grady P, et al. A rapid, cost-effective tailed amplicon method for sequencing SARS-CoV-2. BMC Genomics. 2020;21(1):863. Published 2020 Dec 4. <a href="https://doi.org/10.1186/s12864-020-07283-6">doi:10.1186/s12864-020-07283-6</a>.</li>
 <li>Itokawa K, Sekizuka T, Hashino M, Tanaka R, Kuroda M. Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. PLoS One. 2020;15(9):e0239403. Published 2020 Sep 18. <a href="https://doi.org/10.1371/journal.pone.0239403">doi:10.1371/journal.pone.0239403</a>.</li> 
 <li>Koskela von Sydow A, Lindqvist CM, Asghar N, et al. Comparison of SARS-CoV-2 whole genome sequencing using tiled amplicon enrichment and bait hybridization. Sci Rep. 2023;13(1):6461. Published 2023 Apr 20. <a href="https://doi.org/10.1038%2Fs41598-023-33168-1">doi:10.1038/s41598-023-33168-1</a>.</li>
-<li>....</li>
-<li>....</li>
-<li>....</li>
+<li>Davina-Nunez C, Perez-Castro S, Godoy-Diz M, Regueiro-Garcia B 2023. Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing. protocols.io. <a href="https://dx.doi.org/10.17504/protocols.io.eq2lyjzbrlx9/v1">doi:10.17504/protocols.io.eq2lyjzbrlx9/v1</a>.</li>
+<li>Wang L, Ng TFF, Castro CJ, et al. Next-generation sequencing of human respiratory syncytial virus subgroups A and B genomes. J Virol Methods. 2022;299:114335. <a href="https://doi.org/10.1016/j.jviromet.2021.114335">doi:10.1016/j.jviromet.2021.114335</a>.</li>
+<li>Goya S., Rojo G.L., Nabaes Jordar M.S., Valinotto L.E., Mistchenko A.S., Viegas M. Whole genome sequencing of respiratory syncytial (RSV) virus from clinical samples with low viral load. <a href="https://protocols.io/view/whole-genome-sequencing-of-respiratory-syncytial-r-bmhak32e">protocols.io</a>.</li>
+<li>Lin Y., Koble J., Prashar P., Pottekat A., Middle C., Kuersten S., Oberholzer M., Brazas R., Whitlock D., Schlaberg R., Schroth G.P. A sequencing and subtyping protocol for Influenza A and B viruses using Illumina® COVIDSeq™ Assay Kit. <a href="https://protocols.io/view/a-sequencing-and-subtyping-protocol-for-influenza-crv3v68n">protocols.io</a>.</li>
 </ol>
   
 <p align="right">
