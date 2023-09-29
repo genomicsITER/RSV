@@ -226,7 +226,7 @@ hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	1556	1576	RSV_A_2_pool2_LEFT	6
 hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	3377	3400	RSV_A_2_pool2_RIGHT	60	+
 hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	2897	2919	RSV_A_3_pool1_LEFT	60	-
 hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01	4802	4826	RSV_A_3_pool1_RIGHT	60	+
-etc
+...
 ```
 
 Example of the <code>FASTA file</code> paired with the corresponding<code>BED file</code> for hRSV/A/England/397/2017|EPI_ISL_412866|2017-01-01 using the <a href="#PCR-primers">primer-scheme</a>:
@@ -244,7 +244,7 @@ TTGGGTGTGGATATTTGTTTCAC
 GCYATGGCAAGACTYAGGAATG
 >RSV_A_3_pool1_RIGHT
 GTTTGCYGAGGCTATGAATATGAT
-etc
+...
 ```
 
 <br>
