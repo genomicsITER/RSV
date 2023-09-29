@@ -63,7 +63,7 @@ This is the result of a continuous collaborative effort of the following Institu
 <a name="Virological-posts"></a>
 ## A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023
 
-The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [3]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to the past 2022-2023 seasonal RSV wave in the Northern hemisphere, as shown in Figures 1 and 2.
+The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [3]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to circulating RSV worldwide, as shown in Figures 1 and 2.
 
 <p align="center">
   <a href="#RSV" title="Up">
