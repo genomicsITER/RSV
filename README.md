@@ -95,7 +95,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 <a name="Illumina-protocol"></a>
 **Illumina-based protocol**
 
-One of the sequencing strategies followed for SARS-CoV-2 surveillance is the use of amplicons derived from primer pools designed by the ARTIC community following a tiling approach [4,5]. ... [6] (see the PCR-primers section).
+One of the sequencing strategies followed for SARS-CoV-2 surveillance is the use of amplicons derived from primer pools designed by the ARTIC community following a tiling approach [4,5] (see the PCR-primers section).
 
 Davina-Nunez et al. [7] have adapted the Illumina COVIDSeq™ Assay (RUO) kit to get the sequence of RSV A and B genomes. Their protocol uses a combination of two nested primer sets covering both RSV-A and RSV-B in the same reaction, followed by the Illumina COVIDSeq™ Assay protocol with minor modifications, and taking advantage of the same reagents included in the kit: <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing V.1</a> at <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">protocols.io</a>.
 
