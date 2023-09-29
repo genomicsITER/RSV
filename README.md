@@ -126,7 +126,7 @@ PCR Universal Primers from Zhout et al. (<a href="https://link.springer.com/prot
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -238,7 +238,7 @@ Please, download the BED files **separately** (one file per Influenza segment).
  
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -295,7 +295,7 @@ EPI_ISL_18323798
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -329,7 +329,7 @@ EPI_ISL_18323798
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -357,7 +357,7 @@ EPI_ISL_18323798
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -382,7 +382,7 @@ EPI_ISL_18323798
   
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -409,7 +409,7 @@ We also thank the authors, the laboratories that originated and submitted the ge
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -426,7 +426,7 @@ Please cite this repository as: _"Influenza repository of the Reference Laborato
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -451,7 +451,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -468,7 +468,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
 
@@ -479,14 +479,10 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
-> September 27, 2023. This repository became public. Enjoy the reading! ;=)
-
-> September 26, 2023. Updated many sections: bioinformatic pipeline, primer-schemes (required BED files for the pipelines), deposited sequences, Influenza virus A and B reference sequences, and other useful repositories with resources to study Influenza.
- 
-> July 26, 2023. Created the private version of this repository.
+> September 27, 2023. Created the private version of this repository.
 
 <p align="right">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
