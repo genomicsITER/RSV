@@ -15,7 +15,7 @@
 
 # Respiratory Syncytial Virus genomic surveillance in the Canary Islands
 
-The COVID-19 pandemic has shown the impact of genomic surveillance of emergent and re-emergent pathogens based on Next Generation Sequencing (NGS), as has been recognized by the World Health Organization [1,2]. Guiding the Public Health response has been accelerated thanks to the generalization of the NGS, allowing the identification and monitoring of emerging SARS-CoV-2 variants in a routine basis across the World.
+The COVID-19 pandemic has shown the impact of genomic surveillance of emergent and re-emergent pathogens based on Next Generation Sequencing (NGS), as has been recognized by the World Health Organization [<a href="References">1,2</a>]. Guiding the Public Health response has been accelerated thanks to the generalization of the NGS, allowing the identification and monitoring of emerging SARS-CoV-2 variants in a routine basis across the World.
 
 Here we present a public repository of **Respiratory Syncytial Virus** related resources maintained by ITER-FIISC-HUNSC-ULL task force.
 
@@ -62,7 +62,7 @@ This is the result of a continuous collaborative effort of the following Institu
 <a name="Virological-posts"></a>
 ## A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023
 
-The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [3]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to circulating RSV worldwide, as shown in Figures 1 and 2.
+The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [<a href="References">3</a>]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to circulating RSV worldwide, as shown in Figures 1 and 2.
 
 <p align="center">
   <a href="#RSV" title="Up">
@@ -95,9 +95,9 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 <a name="Illumina-protocol"></a>
 **Illumina-based protocol**
 
-One of the sequencing strategies followed for SARS-CoV-2 surveillance is the use of amplicons derived from primer pools designed by the ARTIC community following a tiling approach [4,5,6] (see the <a href="#PCR-primers">PCR-primers</a> section).
+One of the sequencing strategies followed for SARS-CoV-2 surveillance is the use of amplicons derived from primer pools designed by the ARTIC community following a tiling approach [<a href="References">4,5,6</a>] (see the <a href="#PCR-primers">PCR-primers</a> section).
 
-Davina-Nunez et al. [7] have adapted the Illumina COVIDSeq™ Assay (RUO) kit to get the sequence of RSV A and B genomes. Their protocol uses a combination of two nested primer sets covering both RSV-A and RSV-B in the same reaction [7,8,9,10], followed by the Illumina COVIDSeq™ Assay protocol with minor modifications, and taking advantage of the same reagents included in the kit: <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing V.1</a> at <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">protocols.io</a>.
+Davina-Nunez et al. [<a href="References">7</a>] have adapted the Illumina COVIDSeq™ Assay (RUO) kit to get the sequence of RSV A and B genomes. Their protocol uses a combination of two nested primer sets covering both RSV-A and RSV-B in the same reaction [<a href="References">7,8,9,10</a>], followed by the Illumina COVIDSeq™ Assay protocol with minor modifications, and taking advantage of the same reagents included in the kit: <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing V.1</a> at <a href="https://www.protocols.io/view/whole-genome-amplification-of-respiratory-syncytia-cvpbw5in.html">protocols.io</a>.
 
 <hr>
 
@@ -111,7 +111,7 @@ _Work in progress_. Come back by the end of December 2023 to find new stuff in t
 <a name="PCR-primers"></a>
 **PCR primers**
 
-PCR primers from Davina-Nunez et al. [7] (and adapted from Wang et al. [8]) have been used. These primers allows the splitting into two pools of non-consecutive amplicons (odd-numbered amplicon primers in pool-1; even-numbered amplicon primers in pool-2). <a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/hRSV-A-B_Primers.tsv">Download this file</a> in tab-separated format.
+PCR primers from Davina-Nunez et al. [<a href="References">7</a>] (and adapted from Wang et al. [<a href="References">8</a>]) have been used. These primers allows the splitting into two pools of non-consecutive amplicons (odd-numbered amplicon primers in pool-1; even-numbered amplicon primers in pool-2). <a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/hRSV-A-B_Primers.tsv">Download this file</a> in tab-separated format.
 
 <p align="center">
   <a href="#RSV" title="Up">
@@ -353,7 +353,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <li>Gohl DM, Garbe J, Grady P, et al. A rapid, cost-effective tailed amplicon method for sequencing SARS-CoV-2. BMC Genomics. 2020;21(1):863. Published 2020 Dec 4. <a href="https://doi.org/10.1186/s12864-020-07283-6">doi:10.1186/s12864-020-07283-6</a>.</li>
 <li>Itokawa K, Sekizuka T, Hashino M, Tanaka R, Kuroda M. Disentangling primer interactions improves SARS-CoV-2 genome sequencing by multiplex tiling PCR. PLoS One. 2020;15(9):e0239403. Published 2020 Sep 18. <a href="https://doi.org/10.1371/journal.pone.0239403">doi:10.1371/journal.pone.0239403</a>.</li> 
 <li>Koskela von Sydow A, Lindqvist CM, Asghar N, et al. Comparison of SARS-CoV-2 whole genome sequencing using tiled amplicon enrichment and bait hybridization. Sci Rep. 2023;13(1):6461. Published 2023 Apr 20. <a href="https://doi.org/10.1038%2Fs41598-023-33168-1">doi:10.1038/s41598-023-33168-1</a>.</li>
-<li>Davina-Nunez C, Perez-Castro S, Godoy-Diz M, Regueiro-Garcia B 2023. Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing. protocols.io. <a href="https://dx.doi.org/10.17504/protocols.io.eq2lyjzbrlx9/v1">doi:10.17504/protocols.io.eq2lyjzbrlx9/v1</a>.</li>
+<li>Davina-Nunez C, Perez-Castro S, Godoy-Diz M, Regueiro-Garcia B 2023. Whole-Genome Amplification of Respiratory Syncytial Virus (RSV) using Illumina CovidSeq reagents for Next-Generation Sequencing. <a href="https://dx.doi.org/10.17504/protocols.io.eq2lyjzbrlx9/v1">protocols.io</a>.</li>
 <li>Wang L, Ng TFF, Castro CJ, et al. Next-generation sequencing of human respiratory syncytial virus subgroups A and B genomes. J Virol Methods. 2022;299:114335. <a href="https://doi.org/10.1016/j.jviromet.2021.114335">doi:10.1016/j.jviromet.2021.114335</a>.</li>
 <li>Goya S., Rojo G.L., Nabaes Jordar M.S., Valinotto L.E., Mistchenko A.S., Viegas M. Whole genome sequencing of respiratory syncytial (RSV) virus from clinical samples with low viral load. <a href="https://protocols.io/view/whole-genome-sequencing-of-respiratory-syncytial-r-bmhak32e">protocols.io</a>.</li>
 <li>Lin Y., Koble J., Prashar P., Pottekat A., Middle C., Kuersten S., Oberholzer M., Brazas R., Whitlock D., Schlaberg R., Schroth G.P. A sequencing and subtyping protocol for Influenza A and B viruses using Illumina® COVIDSeq™ Assay Kit. <a href="https://protocols.io/view/a-sequencing-and-subtyping-protocol-for-influenza-crv3v68n">protocols.io</a>.</li>
