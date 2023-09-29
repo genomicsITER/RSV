@@ -139,7 +139,7 @@ In the upper part of the diagram, there is a typical pipeline to process short r
 
 In the lower part of the diagram, a typical pipeline to process long reads is shown. In addition, it shows how to perform a hybrid de novo genome assembly combining short and long reads.
 
-Several consensus RSV A and B sequences derived from the pipeline based on mapping of Illumina short reads against a RSV (A or B) reference genome have been obtained so far. They have been deposited in GISAID EpiRSV (see <a href="#Sequences">'Sequences'</a> section below).
+Several consensus RSV A and B sequences derived from the pipeline based on mapping of Illumina short reads against a RSV (A or B) reference genome have been obtained so far. They have been deposited in GISAID EpiRSV (see <a href="#Sequences-and-Classification-Results">'Sequences'</a> section below).
 
 <p align="center">
   <a href="https://github.com/genomicsITER/RSV" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
