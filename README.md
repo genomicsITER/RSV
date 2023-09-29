@@ -249,10 +249,14 @@ GTTTGCYGAGGCTATGAATATGAT
 
 <br>
 
+Please, download paired BED and FASTA files for each RSV subtype.
+
+<center>
 |RSV Subtype|BED|FASTA|
 |:---:|:---:|:---:|
 |RSV-A|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/A/RSV_A_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/A/RSV_A_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>|
 |RSV-B|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/B/RSV_B_primers.bed"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download BED file" alt="Download BED file"/></a>|<a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/B/RSV_B_primers.fasta"><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA file" alt="Download FASTA file"/></a>|
+</center>
 
 <br>
  
