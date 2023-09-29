@@ -1,5 +1,4 @@
-![image](https://github.com/genomicsITER/RSV/assets/23115956/bc1bc0e3-213d-48e0-a599-104da79f21a0) <a name="RSV"></a> 
- 
+
 <!-- ------------------ HEADER ------------------ -->
 <!-- Developed and maintained by Genomics Division
 <!-- of the Institute of Technology an Renewable Energy (ITER)
