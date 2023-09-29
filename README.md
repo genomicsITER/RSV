@@ -207,9 +207,9 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 
 **Reference sequences**
 
-|A/H1N1|A/H3N2|B Victoria|B Yamagata|
-|:---:|:---:|:---:|:---:|
-|<a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/641809/">Influenza A virus (A/California/07/2009(H1N1))<br><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA" alt="Download FASTA" /></a>|<a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/393902/">Influenza A virus (A/Wisconsin/67/2005(H3N2))<br><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png"  style="width:32px;" title="Download FASTA" alt="Download FASTA" /></a>|<a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/604436/">Influenza B virus Victoria (B/Brisbane/60/2008)<br><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA" alt="Download FASTA"/></a>|<a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1089607/">Influenza B virus Yamagata (B/Wisconsin/01/2010)<br><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png" style="width:32px;" title="Download FASTA" alt="Download FASTA" /></a>|
+|RSV-A|RSV-B|
+|:---:|:---:|
+|<a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/12814/">hRSV/A/England/397/2017 EPI_ISL_412866 2017-01-01<br><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png"  style="width:32px;" title="Download FASTA" alt="Download FASTA" /></a>|<a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/12814/">hRSV/B/Australia/VIC-RCH056/2019 EPI_ISL_1653999 2019-03-04<br><br><img src="images/Pictogrammers-Material-Text-box-search-outline.64.png"  style="width:32px;" title="Download FASTA" alt="Download FASTA" /></a>|
 
 <br>
 
