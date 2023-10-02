@@ -7,13 +7,13 @@
 
 <!-- ------------------ SECTION ------------------ -->
 <p align="left">
-  <a href="https://github.com/genomicsITER/influenza" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/logos_GH.png" width="auto" /> 
+  <a href="https://github.com/genomicsITER/RSV" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/logos_GH.png" width="auto" /> 
       </a>
 </p>
 
-# Influenza
-A public repository of resources related to Influenza analysis maintained by ITER.
+# RSV
+A public repository of resources related to RSV analysis maintained by ITER.
 
 This is the result of an ongoing joint-effort of the following institutions and laboratories:
 <ul>
@@ -36,10 +36,10 @@ This is the result of an ongoing joint-effort of the following institutions and 
   <ul>
     <li><a href="#5.1">5.1. Assessment of preliminary assembly using QUAST</a></li>
   </ul>
-  <li><a href="#6">6. Detect hits using BLASTn with NCIB Influenza Virus Database</a></li>
+  <li><a href="#6">6. Detect hits using BLASTn with NCIB RSV Virus Database</a></li>
   <ul>
-    <li><a href="#6.1">6.1. Download and build NCBI Influenza Virus database</a></li>
-    <li><a href="#6.2">6.2. Run BLASTn to get the top hit from the NCBI Influenza Virus Database</a></li>
+    <li><a href="#6.1">6.1. Download and build NCBI RSV Virus database</a></li>
+    <li><a href="#6.2">6.2. Run BLASTn to get the top hit from the NCBI RSV Virus Database</a></li>
     <li><a href="#6.3">6.3. Parse BLASTn results to detect the strain to use as reference</a></li>
   </ul>
   <li><a href="#7">7. Align non-host reads to a reference genome</a></li>
@@ -82,7 +82,7 @@ conda activate fastp
 
 threads=16
 
-adapters="Influenza.adapters.fasta"
+adapters="RSV.adapters.fasta"
 
 r1="sample_R1_001.fastq.gz"
 r2="sample_R2_001.fastq.gz"
@@ -190,36 +190,36 @@ conda deactivate
 ```
 
 <a name="6"></a>
-#### 6. Detect hits using BLASTn with NCIB Influenza Virus Database:
+#### 6. Detect hits using BLASTn with NCIB RSV Virus Database:
 <a name="6.1"></a>  
-##### 6.1 Download and build NCBI Influenza Virus database:
+##### 6.1 Download and build NCBI RSV Virus database:
 ```Bash
-# 1. Download latest NCBI Influenza DB sequences and metadata
-wget https://ftp.ncbi.nih.gov/genomes/INFLUENZA/influenza.fna.gz
+# 1. Download latest NCBI RSV DB sequences and metadata
+wget https://ftp.ncbi.nih.gov/genomes/RSV/RSV.fna.gz
 
 # 2. Gunzip NCBI FLU FASTA
 # Replace FASTA headers >gi|{gi}|gb|{accession}|{description} with >{accession}|{description} for easier parsing and processing
-zcat influenza.fna.gz | sed -E 's/^>gi\|[0-9]+\|gb\|(\w+)\|/>/' > influenza.fna
+zcat RSV.fna.gz | sed -E 's/^>gi\|[0-9]+\|gb\|(\w+)\|/>/' > RSV.fna
 
 # 3. Make BLASTDB:
 # In case you installed BLAST through conda:
 conda activate blast
 
-makeblastdb -in influenza.fna
+makeblastdb -in RSV.fna
 
 mkdir blast_db
 
-mv influenza.fna.* blast_db/
+mv RSV.fna.* blast_db/
 
 conda deactivate
 ```
 <a name="6.2"></a> 
-##### 6.2 Run BLASTn to get the top hit from the NCBI Influenza Virus Database:
+##### 6.2 Run BLASTn to get the top hit from the NCBI RSV Virus Database:
 ```Bash
 # In case you installed BLAST through conda:
 conda activate blast
 
-database="/path/to/NCBI_Influenza_Virus_Database/blast_db/influenza.fna"
+database="/path/to/NCBI_RSV_Virus_Database/blast_db/RSV.fna"
 
 threads=16
 
@@ -266,10 +266,10 @@ fi
 
 strain=$( cat sample.strain.txt )
 
-# Path to multiple Influenza strains reference genomes separated by segments:
-infA_h1n1_dir=/path/to/reference/Influenza_A_virus_H1N1_California/separated_segments
-infA_h3n2_dir=/path/to/referenceInfluenza_A_virus_H3N2_Wisconsin/separated_segments
-infB_dir=/path/to/referenceInfluenza_B_virus_Yamagata/separated_segments
+# Path to multiple RSV strains reference genomes separated by segments:
+infA_h1n1_dir=/path/to/reference/RSV_A_virus_H1N1_California/separated_segments
+infA_h3n2_dir=/path/to/reference/RSV_A_virus_H3N2_Wisconsin/separated_segments
+infB_dir=/path/to/reference/RSV_B_virus_Yamagata/separated_segments
 
 # Select reference folder:
 if [[ ${strain} == "A-H1N1" ]]; then
@@ -440,7 +440,7 @@ iqtree -s ${outfile} -nt AUTO
 ```
   
 <p align="right">
-  <a href="#Influenza" title="Up">
-    <img src="https://github.com/genomicsITER/influenza/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+  <a href="#RSV" title="Up">
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
   </a>
 </p>
