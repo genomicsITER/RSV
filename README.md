@@ -154,7 +154,7 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 <a name="Code-Illumina"></a>
 **Code for Illumina short-reads processing**
 
-<a href="https://github.com/genomicsITER/RSV/blob/main/codes/code_Illumina_pipeline.md"><img src="https://github.com/genomicsITER/RSV/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Illumina short reads](https://github.com/genomicsITER/influenza/blob/main/codes/code_Illumina_pipeline.md).
+<a href="https://github.com/genomicsITER/RSV/blob/main/codes/code_Illumina_pipeline.md"><img src="https://github.com/genomicsITER/RSV/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Illumina short reads](https://github.com/genomicsITER/RSV/blob/main/codes/code_Illumina_pipeline.md).
 
 <!-- 
 
