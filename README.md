@@ -124,7 +124,7 @@ The coverage (x) for hRSV samples (*) classified as RSV-A and RSV-B are shown in
 
 <p align="center">
   <a href="#RSV" title="Up">
-    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Coverage_plots_one-sample.png" width="500" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Coverage_plots_one-sample.png" width="75%" />
   </a>
 </p>
 
