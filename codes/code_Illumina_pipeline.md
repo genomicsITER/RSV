@@ -28,37 +28,26 @@ This is the result of an ongoing joint-effort of the following institutions and 
 # Code for Illumina short-reads processing #
 ## Table of contents ##
 <ul>
-  <li><a href="#1">1. Quality Control of raw reads with FastQC</a></li>
-  <li><a href="#2">2. Adapter trimming with fastp</a></li>
-  <li><a href="#3">3. Quality Control of trimmed reads with FastQC</a></li>
-  <li><a href="#4">4. Remove host reads using Kraken2 with humanDB database</a></li>
-  <li><a href="#5">5. Preliminary assembly using Unicycler</a></li>
-  <ul>
-    <li><a href="#5.1">5.1. Assessment of preliminary assembly using QUAST</a></li>
-  </ul>
-  <li><a href="#6">6. Detect hits using BLASTn with NCIB RSV Virus Database</a></li>
-  <ul>
-    <li><a href="#6.1">6.1. Download and build NCBI RSV Virus database</a></li>
-    <li><a href="#6.2">6.2. Run BLASTn to get the top hit from the NCBI RSV Virus Database</a></li>
-    <li><a href="#6.3">6.3. Parse BLASTn results to detect the strain to use as reference</a></li>
-  </ul>
-  <li><a href="#7">7. Align non-host reads to a reference genome</a></li>
-  <ul>
-    <li><a href="#7.1">7.1. Select the reference based on BLASTn results</a></li>
-    <li><a href="#7.2">7.2. Align reads by segment using BWA</a></li>
-    <li><a href="#7.3">7.3. Discard unmapped reads, sort and index BAM files using SAMtools</a></li>
-    <li><a href="#7.4">7.4. Quality Control of sorted BAMs using SAMtools and MosDepth</a></li>
-  </ul>
-  <li><a href="#8">8. Variant Calling with iVar</a></li>
-  <li><a href="#9">9. Consensus FASTA generation with iVar</a></li>
-  <li><a href="#10">10. Lineage classification of segment 4 (HA) with NextClade</a></li>
-  <li><a href="#11">11. Multisample Alignment and Phylogenetic Analysis</a></li>
+  <li><a href="#1">1. Quality control of raw reads with FastQC</a></li>
+  <li><a href="#2">2. Taxonomic classification of raw reads using Kraken2 with PlusPF database</a></li>
+  <li><a href="#3">3. Adapter trimming with fastp</a></li>
+  <li><a href="#4">4. Quality control of trimmed reads with FastQC</a></li>
+  <li><a href="#5">5. Remove host reads using Kraken2 with humanDB database</a></li>
+  <li><a href="#6">6. Multiple Sequence Alignment with bbmap to select reference</a></li>
+  <li><a href="#7">7. Align reads</a></li>
+  <li><a href="#8">8. Trim adapters with iVar before create consensus sequences</a></li>
+  <li><a href="#9">9. Coverage analysis with Mosdepth</a></li>
+  <li><a href="#10">10. Create consensus sequence with iVar</a></li>
+  <li><a href="#11">11. Variant-calling with iVar</a></li>
+  <li><a href="#12">12. Lineage classification with NextClade</a></li>
+  <li><a href="#13">13. Multisample Alignment and Phylogenetic Analysis</a></li>
 </ul>
+
 
 <hr>
 
 <a name="1"></a>
-#### 1. Quality Control of raw reads with FastQC:
+#### 1. Quality control of raw reads with FastQC:
 ```Bash
 # In case you installed FastQC through conda:
 conda activate fastqc
@@ -75,14 +64,36 @@ conda deactivate
 ```
 
 <a name="2"></a>
-#### 2. Adapter trimming with fastp:
+#### 2. Taxonomic classification of raw reads using Kraken2 with PlusPF database:
+```Bash
+# In case you installed Kraken2 through conda:
+conda activate kraken2
+
+database="/path/to/kraken2/databases/k2_pluspf_20230605"
+
+trimmed_r1="sample_R1_001.fastq.gz"
+trimmed_r2="sample_R2_001.fastq.gz"
+
+report="sample.kraken2-report.txt"
+
+kraken2 --db ${database} \
+  --report ${report} \
+  --paired ${r1} ${r2}
+
+# Reports could be loaded to Pavian server (https://fbreitwieser.shinyapps.io/pavian/) for an interactive analysis of the classification results.
+
+conda deactivate
+```
+
+<a name="3"></a>
+#### 3. Adapter trimming with fastp:
 ```Bash
 # In case you installed fastp through conda:
 conda activate fastp
 
 threads=16
 
-adapters="RSV.adapters.fasta"
+primers_fasta="RSV_A_B.primers.fasta"
 
 r1="sample_R1_001.fastq.gz"
 r2="sample_R2_001.fastq.gz"
@@ -93,20 +104,20 @@ out2="sample_R2_001.fastp.fastq.gz"
 json="sample.fastp.json"
 html="sample.fastp.html"
 
-fastp --thread ${threads}\
+fastp --thread ${threads} \
   --in1 ${r1} \
   --in2 ${r2} \
   --out1 ${out1} \
   --out2 ${out2} \
   --json ${json} \
   --html ${html} \
-  --adapter_fasta ${adapters}
+  --adapter_fasta ${primers_fasta}
 
 conda deactivate
 ```
 
-<a name="3"></a>
-#### 3. Quality Control of trimmed reads with FastQC:
+<a name="4"></a>
+#### 4. Quality control of trimmed reads with FastQC:
 ```Bash
 # In case you installed FastQC through conda:
 conda activate fastqc
@@ -121,8 +132,8 @@ fastqc ${trimmed_r2} --outdir ${outdir}
 conda deactivate
 ```
 
-<a name="4"></a>
-#### 4. Remove host reads using Kraken2 with humanDB database:
+<a name="5"></a>
+#### 5. Remove host reads using Kraken2 with humanDB database:
 ```Bash
 # In case you installed Kraken2 through conda:
 conda activate kraken2
@@ -146,289 +157,184 @@ kraken2 --db ${database} \
 conda deactivate
 ```
 
-<a name="5"></a>
-#### 5. Preliminary assembly using Unicycler:
-```Bash
-# In case you installed Unicycler through conda:
-conda activate unicycler
-
-threads=16
-
-r1="sample.unclassified_1.fastq"
-r2="sample.unclassified_2.fastq"
-
-outdir="./unicycler_results"
-
-unicycler --threads ${threads} \
-  -1 ${r1} \
-  -2 ${r2} \
-  --out ${outdir}
-
-mv ${outdir}/assembly.fasta sample.unicycler.fasta
-
-conda deactivate
-```
-
-<a name="5.1"></a>  
-##### 5.1 Assessment of preliminary assembly using QUAST:
-```Bash
-# In case you installed QUAST through conda:
-conda activate quast
-
-infile="sample.unicycler.fasta"
-outdir="quast_results"
-
-threads=16
-
-quast.py --threads ${threads} \
-  --circos \
-  --output-dir ${outdir} \
-  --labels sample \
-  ${infile}
-
-conda deactivate
-```
-
 <a name="6"></a>
-#### 6. Detect hits using BLASTn with NCIB RSV Virus Database:
-<a name="6.1"></a>  
-##### 6.1 Download and build NCBI RSV Virus database:
+#### 6. Multiple Sequence Alignment with bbmap to select reference:
 ```Bash
-# 1. Download latest NCBI RSV DB sequences and metadata
-wget https://ftp.ncbi.nih.gov/genomes/RSV/RSV.fna.gz
+# In case you installed bbmap through conda:
+conda activate bbmap
 
-# 2. Gunzip NCBI FLU FASTA
-# Replace FASTA headers >gi|{gi}|gb|{accession}|{description} with >{accession}|{description} for easier parsing and processing
-zcat RSV.fna.gz | sed -E 's/^>gi\|[0-9]+\|gb\|(\w+)\|/>/' > RSV.fna
+# Reference with both RSV subtypes:
+multifasta="hRSV_A_and_B.fasta"
 
-# 3. Make BLASTDB:
-# In case you installed BLAST through conda:
-conda activate blast
-
-makeblastdb -in RSV.fna
-
-mkdir blast_db
-
-mv RSV.fna.* blast_db/
-
-conda deactivate
-```
-<a name="6.2"></a> 
-##### 6.2 Run BLASTn to get the top hit from the NCBI RSV Virus Database:
-```Bash
-# In case you installed BLAST through conda:
-conda activate blast
-
-database="/path/to/NCBI_RSV_Virus_Database/blast_db/RSV.fna"
-
-threads=16
-
-asm="sample.unicycler.fasta"
-out="sample.unicycler.blastn.txt"
-
-blastn -num_threads ${threads} \
-  -db ${database} \
-  -num_alignments 1 \
-  -outfmt "6 stitle" \
-  -query ${asm} \
-  -out ${out}
-
-conda deactivate
-```
-<a name="6.3"></a> 
-##### 6.3 Parse BLASTn results to detect the strain to use as reference:
-```Bash
-# This code creates a file with the strain to use as reference, as "A/H1N1", "A/H3N2" or "B":
-
-infile="sample.unicycler.blastn.txt"
-outfile="sample.strain.txt"
-
-touch ${outfile}
-
-strain=$( cat ${infile} | cut -d"(" -f2 | cut -d"/" -f1 | uniq )
-
-if [[ -n ${strain} ]]; then
-  if [[ ${strain} == "A" ]]; then
-    substrain=$( cat "{infile}" | cut -d"(" -f3 | cut -d")" -f1 | uniq )
-    echo -e ${strain}"/"${substrain} >> ${outfile}
-  else
-    # If ${strain}=="B", only save the strain:
-    echo -e ${strain} >> ${outfile}
-  fi
-fi
-```
-
-<a name="7"></a> 
-#### 7. Align non-host reads to a reference genome:
-<a name="7.1"></a>  
-##### 7.1 Select the reference based on BLASTn results:
-```Bash
-
-strain=$( cat sample.strain.txt )
-
-# Path to multiple RSV strains reference genomes separated by segments:
-infA_h1n1_dir=/path/to/reference/RSV_A_virus_H1N1_California/separated_segments
-infA_h3n2_dir=/path/to/reference/RSV_A_virus_H3N2_Wisconsin/separated_segments
-infB_dir=/path/to/reference/RSV_B_virus_Yamagata/separated_segments
-
-# Select reference folder:
-if [[ ${strain} == "A-H1N1" ]]; then
-  reference_dir=${infA_h1n1_dir}
-elif [[ ${strain} == "A-H3N2" ]]; then
-  reference_dir=${infA_h3n2_dir}
-elif [[ ${strain} == "B" ]]; then
-  reference_dir=${infB_dir}
-else
-  echo "LOG: There is no FASTA file for strain ${strain}."
-  exit 1
-fi
-```
-
-<a name="7.2"></a> 
-##### 7.2 Align reads by segment using BWA:
-```Bash
-# In case you installed BWA through conda:
-conda activate bwa
-
-strain=$( cat sample.strain.txt )
-
-# Non-host reads from step 4:
 r1="sample.unclassified_1.fastq"
 r2="sample.unclassified_2.fastq"
 
-for i in $( seq 1 8 ); do
-  reference=${reference_dir}/Seg${i}.fasta
-  outfile=sample.${strain}.seg${i}.sam
+out="sample.multifasta_alignment.sam"
+cov_stats="sample.multifasta_alignment_bbmap_covstats.tsv"
+all_stats="sample.multifasta_alignment_bbmap_allstats.txt"
 
-  bwa mem -Y ${reference} ${r1} ${r2} > ${outfile}
-done
+threads=16
+
+bbmap.sh \
+  in=${r1} \
+  in2=${r2} \
+  outm=${out} \
+  ref=${ref} \
+  threads=${threads} \
+  covstats=${cov_stats} \
+  local=true interleaved=false maxindel=80 -Xmx32g > ${all_stats} 2>&1
+
+# Select reference using this script from Graniger-Lab's Revica pipeline: https://github.com/greninger-lab/revica/blob/main/bin/select_reference.py
+python3 select_reference.py \
+  -bbmap_covstats ${covstats} \
+  -b sample \
+  -reads_num ${reads_used} \
+  -mapped_reads ${mapped_reads} \
+  -m 3 \
+  -p 0
+
+# This script will generate a file with the following name structure:
+# sample_accession_reference_vid.txt
 
 conda deactivate
 ```
 
-<a name="7.3"></a> 
-##### 7.3 Discard unmapped reads, sort and index BAM files using SAMtools:
+<a name="7"></a>
+#### 7. Align reads:
 ```Bash
-# In case you installed SAMtools through conda:
-conda activate samtools
+# Select reference file:
+selected_reference=$( awk '{ print $3 }' sample_accession_reference_vid.txt )
 
-strain=$( cat sample.strain.txt )
+if [ ${selected_reference} -eq "hRSV_A_England_397_2017" ]; then
+  reference=/path/to/hRSV_A_England_397_2017.fasta
+  type="RSV-A"
+elif [ ${selected_reference} -eq "hRSV_B_Australia_VIC-RCH056_2019" ]; then
+  reference=/path/to/hRSV_B_Australia_VIC-RCH056_2019.fasta
+  type="RSV-B"
+fi
 
-for i in $( seq 1 8 ); do
-  infile=sample.${strain}.seg${i}.sam
-  mapped=sample.${strain}.mapped.seg${i}.bam
-  samtools view -F 0x04 -b ${infile} > ${mapped}
+r1=${sampledir}/${sample}.fastp.unclassified_1.fastq
+r2=${sampledir}/${sample}.fastp.unclassified_2.fastq
 
-  sorted=sample.${strain}.mapped.sorted.seg${i}.bam
-  samtools sort ${mapped} > ${sorted}
-  samtools index ${sorted}
-done
+# Align:
+outfile=sample.aligned-to-${type}.sam
+bwa mem -Y ${reference} ${r1} ${r2} > ${outfile}
+
+# Convert to BAM, sort and index:
+infile=sample.aligned-to-${type}.sam
+outfile=sample.aligned-to-${type}.sorted.bam
+samtools sort ${infile} > ${outfile}
+samtools index ${outfile}
+
+# QCs:
+infile=sample.aligned-to-${type}.sorted.bam
+outfile1=sample.aligned-to-${type}.sorted.flagstat
+outfile2=sample.aligned-to-${type}.sorted.idxstats
+samtools flagstat ${infile} > ${outfile1}
+samtools idxstats ${infile} > ${outfile2}
+
+# Discard unmapped reads
+infile=sample.aligned-to-${type}.sorted.bam
+outfile=sample.aligned-to-${type}.sorted.mapped.bam
+samtools view -F 0x04 -b ${infile} > ${outfile}
+samtools index ${outfile}
+```
+
+<a name="8"></a>
+#### 8. Trim adapters with iVar before create consensus sequences:
+```Bash
+# In case you installed iVar through conda:
+conda activate ivar
+
+primers_bed="RSV_A_B.primers.bed"
+
+# Adapter trimming:
+infile=sample.aligned-to-${type}.sorted.mapped.bam
+prefix=sample.aligned-to-${type}.sorted.mapped.trimmed
+ivar trim -e \
+  -i ${infile} \
+  -b ${primer_bed} \
+  -p ${prefix}
+
+# Sort and index:
+infile=sample.aligned-to-${type}.sorted.mapped.trimmed.bam
+outfile=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted.bam
+samtools sort ${infile} > ${outfile}
+samtools index ${outfile}
 
 conda deactivate
 ```
 
-<a name="7.4"></a> 
-##### 7.4 Quality Control of sorted BAMs using SAMtools and MosDepth:
+<a name="9"></a>
+#### 9. Coverage analysis with Mosdepth and Samtools:
 ```Bash
-# In case you installed SAMtools through conda:
-conda activate samtools
-
-strain=$( cat sample.strain.txt )
-
-for i in $( seq 1 8 ); do
-  infile=sample.${strain}.mapped.sorted.seg${i}.bam
-  flagstat=sample.${strain}.mapped.sorted.seg${i}.flagstat
-  idxstats=sample.${strain}.mapped.sorted.seg${i}.idxstats
-
-  samtools flagstat ${infile} > ${flagstat}
-  samtools idxstats ${infile} > ${idxstats}
-done
-
-conda deactivate
-
-# In case you installed MosDepth through conda:
+# In case you installed Mosdepth through conda:
 conda activate mosdepth
 
-for i in $( seq 1 8 ); do
-  infile=sample.${strain}.mapped.sorted.seg${i}.bam
-  prefix=sample.${strain}.mapped.sorted.seg${i}
-
-  threads=16
-
-  mosdepth --threads ${threads} --no-per-base ${prefix} ${infile}
-done
+infile=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted.bam
+prefix=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted
+mosdepth --threads 4 --thresholds 1,10,20,50,100,500,1000 ${prefix} ${infile}
 
 conda deactivate
+
+infile=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted.bam
+outfile=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted.depth
+samtools depth -a ${infile} > ${outfile}
 ```
 
-<a name="8"></a> 
-#### 8. Variant Calling with iVar:
+<a name="10"></a>
+#### 10. Create consensus sequence with iVar:
 ```Bash
 # In case you installed iVar through conda:
 conda activate ivar
 
-strain=$( cat sample.strain.txt )
+# Minimum depth to call consensus:
+min_depth=5
 
-# Make a pileup and pipe to iVar to call variants:
-for i in $( seq 1 8 ); do
-  reference=${reference_dir}/Seg${i}.fasta
+infile=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted.bam
+prefix=sample.aligned-to-${type}.ivar_consensus
 
-  infile="sample.${strain}.mapped.sorted.seg${i}.bam"
-  out_prefix="sample.${strain}.seg${i}.out_variants"
-
-  samtools mpileup --reference ${reference} ${infile} | ivar variants -r ${reference} -p ${out_prefix}
-done
+samtools mpileup -A -Q 0 ${infile} | ivar consensus -p ${prefix} -q 10 -t 0 -m ${min_depth}
 
 conda deactivate
 ```
 
-<a name="9"></a> 
-#### 9. Consensus FASTA Generation:
+<a name="11"></a>
+#### 11. Variant-calling with iVar:
 ```Bash
 # In case you installed iVar through conda:
 conda activate ivar
 
-strain=$( cat sample.strain.txt )
+infile=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted.bam
+prefix=sample.aligned-to-${type}.ivar_calling
 
-# Generate consensus FASTA:
-# Optionally, you can set different parameters to define minimum thresholds for the consensus 
-# (see ivar consensus help).
-
-for i in $( seq 1 8 ); do
-  infile="sample.${strain}.mapped.sorted.seg${i}.bam"
-  outfile="sample.${strain}.seg${i}.consensus.fasta"
-
-  samtools mpileup -A -Q 0 ${infile} | ivar consensus -p ${outfile} -q 10 -t 0 -m 1
-done
+samtools mpileup --reference ${reference} ${infile} | ivar variants -r ${reference} -p ${prefix}
 
 conda deactivate
 ```
 
-<a name="10"></a> 
-#### 10. Lineage classification of segment 4 (HA) with NextClade:
+<a name="12"></a>
+#### 12. Lineage classification with NextClade:
 ```Bash
 strain=$( cat sample.strain.txt )
 
-# Create a multisample FASTA with more sequences separated by strain:
+# Create a multisample FASTA with more sequences separated by reference:
 sequences_dir="/path/to/more/sequences"
-infile="sample.${strain}.seg4.consensus.fasta"
-outfile="multifasta.${strain}.fa"
+outfile="multifasta.${type}.fa"
 
-cat ${sequences_dir}/*.${strain}.seg4.consensus.fa ${infile} > ${outfile}
+cat ${sequences_dir}/*.aligned-to-${type}.ivar_consensus.fa ${infile} > ${outfile}
 
-...
+# You upload this multifasta file to Nextclade (https://clades.nextstrain.org/) and select the correct pathogen to run clade assignment, mutation calling, and sequence quality checks.
 ```
 
-<a name="11"></a> 
-#### 11. Multisample Alignment and Phylogenetic Analysis of segment 4 (HA):
+<a name="13"></a>
+#### 13. Multisample Alignment and Phylogenetic Analysis:
 ```Bash
-strain=$( cat sample.strain.txt )
-
 # Align multisample FASTA using MAFFT:
 # You should replace the --thread parameter with a proper value that suits your execution environment.
-infile="multifasta.${strain}.fa"
-outfile="multifasta.${strain}.mafft-aligned.fa"
-logfile="multifasta.${strain}.mafft-aligned.log"
+infile="multifasta.${type}.fa"
+outfile="multifasta.${type}.mafft-aligned.fa"
+logfile="multifasta.${type}.mafft-aligned.log"
 mafft --reorder --anysymbol --nomemsave --adjustdirection --thread 48 ${infile} 1> ${outfile} 2> ${logfile}
 
 # Generate phylogenetic tree using IQ-TREE with best-fit model:
