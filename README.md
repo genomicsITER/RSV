@@ -120,6 +120,15 @@ PCR primers from Davina-Nunez et al. [<a href="#References">7</a>] (and adapted 
   </a>
 </p>
 
+The coverage (x) for hRSV samples (*) classified as RSV-A and RSV-B are shown in figure 3.
+
+<p align="center">
+  <a href="#RSV" title="Up">
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Coverage_plots_one-sample.png" width="500" />
+  </a>
+</p>
+
+(*) Sequences were obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp). 
 
 <p align="right">
   <a href="#RSV" title="Up">
