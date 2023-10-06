@@ -33,7 +33,7 @@ This is the result of an ongoing joint-effort of the following institutions and 
   <li><a href="#3">3. Adapter trimming with fastp</a></li>
   <li><a href="#4">4. Quality control of trimmed reads with FastQC</a></li>
   <li><a href="#5">5. Remove host reads using Kraken2 with humanDB database</a></li>
-  <li><a href="#6">6. Multiple Sequence Alignment with bbmap to select reference</a></li>
+  <li><a href="#6">6. Multi-reference alignment with bbmap to select reference</a></li>
   <li><a href="#7">7. Align reads</a></li>
   <li><a href="#8">8. Trim adapters with iVar before create consensus sequences</a></li>
   <li><a href="#9">9. Coverage analysis with Mosdepth</a></li>
@@ -158,7 +158,7 @@ conda deactivate
 ```
 
 <a name="6"></a>
-#### 6. Multiple Sequence Alignment with bbmap to select reference:
+#### 6. Multi-reference alignment with bbmap to select reference:
 ```Bash
 # In case you installed bbmap through conda:
 conda activate bbmap
