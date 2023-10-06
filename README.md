@@ -144,7 +144,7 @@ The coverage (x) for hRSV samples classified as RSV-A and RSV-B are shown in fig
 <a name="Bioinformatic pipelines"></a>
 ## Bioinformatic pipelines
 
-The following diagram (Figure 3) represents a full pipeline used to derive the consensus FASTA sequence of RSV viruses using short-read Illumina sequencing.
+The following diagram (Figure 4) represents a full pipeline used to derive the consensus FASTA sequence of RSV viruses using short-read Illumina sequencing.
 
 In the upper part of the diagram, there is a typical pipeline to process short reads, from the basecalling to the final consensus FASTA sequence, and downstream analysis such as the phylogenetic inference.
 
@@ -158,7 +158,7 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
   </a>
 </p>
 
-**Figure 3**. Full bioinformatic pipeline to obtain the RSV sequences and to infer phylogenetic relationships with other RSV genomes available obtained from public repositories as provided by Nextstrain.
+**Figure 4**. Full bioinformatic pipeline to obtain the RSV sequences and to infer phylogenetic relationships with other RSV genomes available obtained from public repositories as provided by Nextstrain.
 
 <hr>
 
