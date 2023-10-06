@@ -112,7 +112,9 @@ _Work in progress_. Come back by the end of December 2023 to find new stuff in t
 <a name="PCR-primers"></a>
 **PCR primers**
 
-PCR primers from Davina-Nunez et al. [<a href="#References">7</a>] (and adapted from Wang et al. [<a href="#References">8</a>]) have been used. These primers allows the splitting into two pools of non-consecutive amplicons (odd-numbered amplicon primers in pool-1; even-numbered amplicon primers in pool-2). <a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/hRSV-A-B_Primers.tsv">Download this file</a> in tab-separated format.
+PCR primers from Davina-Nunez et al. [<a href="#References">7</a>] (and adapted from Wang et al. [<a href="#References">8</a>]) have been used (Table 1). These primers allows the splitting into two pools of non-consecutive amplicons (odd-numbered amplicon primers in pool-1; even-numbered amplicon primers in pool-2). <a href="https://github.com/genomicsITER/RSV/blob/main/primer_schemes/hRSV-A-B_Primers.tsv">Download this file</a> in tab-separated format.
+
+**Table 1**. PCR primers for hRSV A and B.
 
 <p align="center">
   <a href="#RSV" title="Up">
