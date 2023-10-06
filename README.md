@@ -130,7 +130,7 @@ The coverage (x) for hRSV samples classified as RSV-A and RSV-B are shown in fig
   </a>
 </p>
 
-**Figure 3**. Coverage for hRSV A and B obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp) collected from nasopharyngeal swabs. 
+**Figure 3**. Coverage for hRSV A (left) and B (right) obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp) collected from nasopharyngeal swabs. 
 
 <p align="right">
   <a href="#RSV" title="Up">
