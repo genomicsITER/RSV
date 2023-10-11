@@ -79,7 +79,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
   </a>
 </p>
 
-**Figure 2**. A phylogenetic tree depicting the position of the genome draft of RSV-B samples collected in the period November 2022-June 2023 from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the <i>'hRSV/B/Australia/VIC-RCH056/2019' (EPI_ISL_1653999)</i> reference.
+**Figure 2**. A phylogenetic tree depicting the position of the genome draft of RSV-B samples collected in the period November 2022-June 2023 from patients in the Canary Islands a with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the <i>'hRSV/B/Australia/VIC-RCH056/2019' (EPI_ISL_1653999)</i> reference.
 
 <p align="right">
   <a href="#RSV" title="Up">
@@ -154,11 +154,9 @@ A heatmap of amplicon median coverage (x) for hRSV samples classified as RSV-A a
 <a name="Bioinformatic pipelines"></a>
 ## Bioinformatic pipelines
 
-The following diagram (Figure 4) represents a full pipeline used to derive the consensus FASTA sequence of RSV viruses using short-read Illumina sequencing.
+The following diagram (Figure 5) represents a full pipeline used to derive the consensus FASTA sequence of RSV viruses using short-read Illumina sequencing.
 
-In the upper part of the diagram, there is a typical pipeline to process short reads, from the basecalling to the final consensus FASTA sequence, and downstream analysis such as the phylogenetic inference.
-
-In the lower part of the diagram, a typical pipeline to process long reads is shown. In addition, it shows how to perform a hybrid de novo genome assembly combining short and long reads.
+The pipeline process short reads, from the basecalling to the final consensus FASTA sequence, and ends with downstream analysis such as the phylogenetic inference.
 
 Several consensus RSV A and B sequences derived from the pipeline based on mapping of Illumina short reads against a RSV (A or B) reference genome have been obtained so far. They have been deposited in GISAID EpiRSV (see <a href="#Sequences-and-Classification-Results">'Sequences'</a> section below).
 
@@ -168,7 +166,7 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
   </a>
 </p>
 
-**Figure 4**. Full bioinformatic pipeline to obtain the RSV sequences and to infer phylogenetic relationships with other RSV genomes available obtained from public repositories as provided by Nextstrain.
+**Figure 5**. Full bioinformatic pipeline to obtain the RSV sequences and to infer phylogenetic relationships with other RSV genomes available obtained from public repositories as provided by Nextstrain.
 
 <hr>
 
