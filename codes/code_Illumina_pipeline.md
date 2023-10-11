@@ -71,8 +71,8 @@ conda activate kraken2
 
 database="/path/to/kraken2/databases/k2_pluspf_20230605"
 
-trimmed_r1="sample_R1_001.fastq.gz"
-trimmed_r2="sample_R2_001.fastq.gz"
+r1="sample_R1_001.fastq.gz"
+r2="sample_R2_001.fastq.gz"
 
 report="sample.kraken2-report.txt"
 
