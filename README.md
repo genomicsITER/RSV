@@ -71,7 +71,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
   </a>
 </p>
 
-**Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A sampled in February and August 2023, from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/A/England/397/2017' (EPI_ISL_412866) reference.
+**Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A samples collected in February and August 2023 from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the <i>'hRSV/A/England/397/2017' (EPI_ISL_412866)</i> reference.
 
 <p align="center">
   <a href="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-B_CanaryIslands_Spain_EN.png" title="Up">
@@ -79,7 +79,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
   </a>
 </p>
 
-**Figure 2**. A phylogenetic tree depicting the position of the genome draft of RSV-B sampled in the period November 2022-June 2023, from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/B/Australia/VIC-RCH056/2019' (EPI_ISL_1653999) reference.
+**Figure 2**. A phylogenetic tree depicting the position of the genome draft of RSV-B samples collected in the period November 2022-June 2023 from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the <i>'hRSV/B/Australia/VIC-RCH056/2019' (EPI_ISL_1653999)</i> reference.
 
 <p align="right">
   <a href="#RSV" title="Up">
