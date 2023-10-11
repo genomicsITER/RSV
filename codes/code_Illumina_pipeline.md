@@ -185,7 +185,8 @@ bbmap.sh \
   covstats=${cov_stats} \
   local=true interleaved=false maxindel=80 -Xmx32g > ${all_stats} 2>&1
 
-# Select reference using this script from Graniger-Lab's Revica pipeline: https://github.com/greninger-lab/revica/blob/main/bin/select_reference.py
+# Select reference using this script from Graniger-Lab's Revica pipeline:
+# https://github.com/greninger-lab/revica/blob/main/bin/select_reference.py
 python3 select_reference.py \
   -bbmap_covstats ${covstats} \
   -b sample \
@@ -325,7 +326,8 @@ outfile="multifasta.${type}.fa"
 
 cat ${sequences_dir}/*.aligned-to-${type}.ivar_consensus.fa ${infile} > ${outfile}
 
-# You upload this multifasta file to Nextclade (https://clades.nextstrain.org/) and select the correct pathogen to run clade assignment, mutation calling, and sequence quality checks.
+# You can upload this multifasta file to Nextclade (https://clades.nextstrain.org/) and select the
+# correct pathogen to run clade assignment, mutation calling, and sequence quality checks.
 ```
 
 <a name="13"></a>
