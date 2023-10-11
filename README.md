@@ -136,7 +136,7 @@ A heatmap of amplicon median coverage (x) for hRSV samples classified as RSV-A a
 
 <p align="center">
   <a href="https://github.com/genomicsITER/RSV/blob/main/figures/RSV-A-and-B.amplicons-coverage.heatmap.png" title="Up">
-    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/RSV-A-and-B.amplicons-coverage.heatmap.png" width="75%" />
+    <img src="https://github.com/genomicsITER/RSV/blob/main/figures/RSV-A-and-B.amplicons-coverage.heatmap.png" width="50%" />
   </a>
 </p>
 
