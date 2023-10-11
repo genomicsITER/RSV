@@ -194,7 +194,7 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 <details>
 <summary>Bioinformatic software (click to display):</summary>
 <ul>
-  <li>Conda manual for installation of numerous open-source tools used in these pipelines:<a href="https://docs.conda.io/en/latest/">Conda documentation</a></li>
+  <li>Conda manual for installation of numerous open-source tools used in these pipelines: <a href="https://docs.conda.io/en/latest/">Conda documentation</a></li>
   <li>Programming environment of general purpose: <a href="https://www.r-project.org/">R v.4.1.3</a></li>
   <li>Quality Control of Illumina reads: <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC v0.11.9</a></li>
   <li>Adapter trimming: <a href="https://github.com/OpenGene/fastp">fastp v0.23.2</a></li>
