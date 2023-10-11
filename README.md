@@ -483,6 +483,10 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
+> October 11, 2023. This repository became fully public. Enjoy the reading! ;=)
+
+> September 29, 2023. A major update of the whole repository.
+
 > September 27, 2023. Created the private version of this repository.
 
 <p align="right">
