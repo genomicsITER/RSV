@@ -66,7 +66,7 @@ This is the result of a continuous collaborative effort of the following Institu
 The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [<a href="#References">3</a>]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to circulating RSV worldwide, as shown in Figures 1 and 2.
 
 <p align="center">
-  <a href="#RSV" title="Up">
+  <a href="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-A_CanaryIslands_Spain_EN.png" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-A_CanaryIslands_Spain_EN.png" width="75%" />
   </a>
 </p>
@@ -74,7 +74,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 **Figure 1**. A phylogenetic tree depicting the position of the genome draft of RSV-A sampled in February and August 2023, from patients in the Canary Islands along with NCBI GenBank publicly available sequences as computed by <a href="https://clades.nextstrain.org/">Nextstrain</a> using the the 'hRSV/A/England/397/2017' (EPI_ISL_412866) reference.
 
 <p align="center">
-  <a href="#RSV" title="Up">
+  <a href="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-B_CanaryIslands_Spain_EN.png" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Tree_hRSV-B_CanaryIslands_Spain_EN.png" width="75%" />
   </a>
 </p>
@@ -117,7 +117,7 @@ PCR primers from Davina-Nunez et al. [<a href="#References">7</a>] (and adapted 
 **Table 1**. PCR primers for hRSV A and B.
 
 <p align="center">
-  <a href="#RSV" title="Up">
+  <a href="https://github.com/genomicsITER/RSV/blob/main/figures/hRSV-A-B_Primers.png" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/figures/hRSV-A-B_Primers.png" width="500" />
   </a>
 </p>
@@ -125,7 +125,7 @@ PCR primers from Davina-Nunez et al. [<a href="#References">7</a>] (and adapted 
 The coverage (x) for hRSV samples classified as RSV-A and RSV-B are shown in figure 3.
 
 <p align="center">
-  <a href="#RSV" title="Up">
+  <a href="https://github.com/genomicsITER/RSV/blob/main/figures/Coverage_plots_one-sample.png" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/figures/Coverage_plots_one-sample.png" width="75%" />
   </a>
 </p>
