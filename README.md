@@ -18,7 +18,7 @@
 
 The COVID-19 pandemic has shown the impact of genomic surveillance of emergent and re-emergent pathogens based on Next Generation Sequencing (NGS), as has been recognized by the World Health Organization [<a href="#References">1,2</a>]. Guiding the Public Health response has been accelerated thanks to the generalization of the NGS, allowing the identification and monitoring of emerging SARS-CoV-2 variants in a routine basis across the World.
 
-Here we present a public repository of **Respiratory Syncytial Virus** related resources maintained by ITER-FIISC-HUNSC-ULL task force.
+Here we present a public repository of **Respiratory Syncytial Virus** related resources maintained by the ITER-FIISC-HUNSC-ULL task force.
 
 This is the result of a continuous collaborative effort of the following Institutions and Laboratories:
 <ul>
@@ -122,7 +122,7 @@ PCR primers from Davina-Nunez et al. [<a href="#References">7</a>] (and adapted 
   </a>
 </p>
 
-The coverage (x) for hRSV samples classified as RSV-A and RSV-B are shown in figure 3.
+The coverage (x) for hRSV samples classified as RSV-A and RSV-B are shown in Figure 3.
 
 <p align="center">
   <a href="https://github.com/genomicsITER/RSV/blob/main/figures/Coverage_plots_one-sample.png" title="Up">
@@ -130,9 +130,9 @@ The coverage (x) for hRSV samples classified as RSV-A and RSV-B are shown in fig
   </a>
 </p>
 
-**Figure 3**. Coverage for hRSV A (left) and B (right) obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp) collected from nasopharyngeal swabs. 
+**Figure 3**. Coverage for hRSV A (left) and B (right) obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp) collected from nasopharyngeal swabs from six patients.
 
-A heatmap of amplicon median coverage (x) for hRSV samples classified as RSV-A and RSV-B is shown in figure 4.
+A heatmap of amplicon median coverage (x) for hRSV samples classified as RSV-A and RSV-B is shown in Figure 4.
 
 <p align="center">
   <a href="https://github.com/genomicsITER/RSV/blob/main/figures/RSV-A-and-B.amplicons-coverage.heatmap.png" title="Up">
@@ -140,7 +140,7 @@ A heatmap of amplicon median coverage (x) for hRSV samples classified as RSV-A a
   </a>
 </p>
 
-**Figure 4**. Heatmap of amplicon median coverage for hRSV A (left) and B (right) obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp) collected from nasopharyngeal swabs. 
+**Figure 4**. Heatmap of amplicon median coverage for hRSV A (left) and B (right) obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp) collected from nasopharyngeal swabs from six patients. 
 
 <p align="right">
   <a href="#RSV" title="Up">
