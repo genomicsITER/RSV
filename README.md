@@ -227,6 +227,10 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 
 <br>
 
+Both reference sequences are used in a multi-reference FASTA file within the pipeline.
+
+<br>
+
 ### BED and FASTA files
 
 Primer schemes files (BED and FASTA) are required in the trimming step of PCR-primers.
