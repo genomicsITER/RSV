@@ -319,12 +319,12 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 
 |GISAID accession|Isolate name|RSV Subtype|Clade(G_clade)|Location|
 |:---|:---:|:---:|:---:|:---:|
-|EPI_ISL_18321533|A/Spain/CN-HUNSC_ITER|A|A23 (G_clade:GA2.3.5)|Europe/Spain/Canary Islands|
-|EPI_ISL_18321558|A/Spain/CN-HUNSC_ITER|A|A23 (G_clade:GA2.3.5)|Europe/Spain/Canary Islands|
-|EPI_ISL_18323795|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
-|EPI_ISL_18323796|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
-|EPI_ISL_18323797|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
-|EPI_ISL_18323798|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade:GB5.0.5a)|Europe/Spain/Canary Islands|
+|EPI_ISL_18321533|A/Spain/CN-HUNSC_ITER|A|A23 (G_clade: GA2.3.5)|Europe/Spain/Canary Islands|
+|EPI_ISL_18321558|A/Spain/CN-HUNSC_ITER|A|A23 (G_clade: GA2.3.5)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323795|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade: GB5.0.5a)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323796|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade: GB5.0.5a)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323797|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade: GB5.0.5a)|Europe/Spain/Canary Islands|
+|EPI_ISL_18323798|A/Spain/CN-HUNSC_ITER|B|B6 (G_clade: GB5.0.5a)|Europe/Spain/Canary Islands|
 
 (*) NOTE: other metadata are available for these samples in <a href="https://gisaid.org/">GISAID</a> and from the authors upon a reasonable request.
 
@@ -347,10 +347,13 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <summary>Kudos to all research teams behind the scenes in all these repositories and web platforms (click to display):</summary>
 
 <ul>
-  <li><a href="">Repo</a></li>
-  <li><a href="">Repo</a></li>
-  <li><a href="">Repo</a></li>
-  <li><a href="">Repo</a></li>
+  <li><a href="https://umasangumathi.github.io/FluLINE/">FluLINE</a></li>
+  <li><a href="https://github.com/hkailee/FluSeq">FluSeq</a></li>
+  <li><a href="https://insaflu.readthedocs.io/en/latest/index.html">INSaFLU</a></li>
+  <li><a href="https://clades.nextstrain.org/">Nextclade</a></li>
+  <li><a href="https://nextstrain.org/rsv/a/genome">Nextstrain for RSV</a></li>
+  <li><a href="https://github.com/peterk87/nf-flu">nf-flu</a></li>
+  <li><a href="https://github.com/greninger-lab/revica">REVICA</a></li>
 </ul>
 
 </details>
