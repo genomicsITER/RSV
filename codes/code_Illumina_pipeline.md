@@ -80,7 +80,8 @@ kraken2 --db ${database} \
   --report ${report} \
   --paired ${r1} ${r2}
 
-# Reports could be loaded to Pavian server (https://fbreitwieser.shinyapps.io/pavian/) for an interactive analysis of the classification results.
+# Reports could be loaded to Pavian server (https://fbreitwieser.shinyapps.io/pavian/)
+# for an interactive analysis of the classification results.
 
 conda deactivate
 ```
