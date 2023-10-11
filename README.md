@@ -153,7 +153,7 @@ In the lower part of the diagram, a typical pipeline to process long reads is sh
 Several consensus RSV A and B sequences derived from the pipeline based on mapping of Illumina short reads against a RSV (A or B) reference genome have been obtained so far. They have been deposited in GISAID EpiRSV (see <a href="#Sequences-and-Classification-Results">'Sequences'</a> section below).
 
 <p align="center">
-  <a href="https://github.com/genomicsITER/RSV" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
+  <a href="https://github.com/genomicsITER/RSV/blob/main/figures/RSV_pipeline.png" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
     <img src="https://github.com/genomicsITER/RSV/blob/main/figures/RSV_pipeline.png" width="auto" /> 
   </a>
 </p>
