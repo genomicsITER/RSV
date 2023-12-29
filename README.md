@@ -142,6 +142,9 @@ A heatmap of amplicon median coverage (x) for hRSV samples classified as RSV-A a
 
 **Figure 4**. Heatmap of amplicon median coverage for hRSV A (left) and B (right) obtained with an Illumina MiSeq2 sequencer and MiSeq Reagent Kit v2 Nano (2x150 bp) collected from nasopharyngeal swabs from six patients. 
 
+Notice that some work is in progress related to the implementation of Iglesias-Caballero et al. protocol [<a href="#References">11</a>].
+
+
 <p align="right">
   <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
@@ -383,6 +386,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <li>Wang L, Ng TFF, Castro CJ, et al. Next-generation sequencing of human respiratory syncytial virus subgroups A and B genomes. J Virol Methods. 2022;299:114335. <a href="https://doi.org/10.1016/j.jviromet.2021.114335">doi:10.1016/j.jviromet.2021.114335</a>.</li>
 <li>Goya S., Rojo G.L., Nabaes Jordar M.S., Valinotto L.E., Mistchenko A.S., Viegas M. Whole genome sequencing of respiratory syncytial (RSV) virus from clinical samples with low viral load. <a href="https://protocols.io/view/whole-genome-sequencing-of-respiratory-syncytial-r-bmhak32e">protocols.io</a>.</li>
 <li>Lin Y., Koble J., Prashar P., Pottekat A., Middle C., Kuersten S., Oberholzer M., Brazas R., Whitlock D., Schlaberg R., Schroth G.P. A sequencing and subtyping protocol for Influenza A and B viruses using Illumina® COVIDSeq™ Assay Kit. <a href="https://protocols.io/view/a-sequencing-and-subtyping-protocol-for-influenza-crv3v68n">protocols.io</a>.</li>
+<li>Iglesias-Caballero María, Camarero-Serrano Sara, Varona Sarai, Mas Vicente, Calvo Cristina, García María Luz, García-Costa Juan, Vázquez-Morón Sonia, Monzón Sara, Campoy Albert, Cuesta Isabel, Pozo Francisco, Casas Inmaculada. Genomic characterisation of respiratory syncytial virus: a novel system for whole genome sequencing and full-length G and F gene sequences. Euro Surveill. 2023;28(49):pii=2300637. <a href="https://doi.org/10.2807/1560-7917.ES.2023.28.49.2300637">doi:10.2807/1560-7917.ES.2023.28.49.2300637</a></li>
 </ol>
   
 <p align="right">
@@ -484,7 +488,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
-> December 29, 2023. Figure 5 is updated. The bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure. Also updated the code for the <i>de novo</i> assembly.
+> December 29, 2023. Several updates follows: figure 5 is updated; the bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure; also updated the code for the <i>de novo</i> assembly; and a new reference [<a href="#References">11</a>] is added.
 
 > October 11, 2023. This repository became fully public. Enjoy the reading! ;=)
 
