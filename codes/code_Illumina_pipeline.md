@@ -34,7 +34,7 @@ This is the result of an ongoing joint-effort of the following institutions and 
   <li><a href="#4">4. Quality control of trimmed reads with FastQC</a></li>
   <li><a href="#5">5. Remove host reads using Kraken2 with humanDB database</a></li>
   <li><a href="#6">6. Multi-reference alignment with bbmap to select reference</a></li>
-  <li><a href="#7">7. <i>de novo</i> assembly</a></li> 
+  <li><a href="#7">7. <i>De novo</i> assembly</a></li> 
   <li><a href="#8">8. Align reads</a></li>
   <li><a href="#9">9. Trim adapters with iVar before create consensus sequences</a></li>
   <li><a href="#10">10. Coverage analysis with Mosdepth</a></li>
@@ -203,7 +203,7 @@ conda deactivate
 ```
 
 <a name="7"></a>
-#### 7. <i>de novo</i> assembly:
+#### 7. <i>De novo</i> assembly:
 ```Bash
 
 # Unicycler uses SPAdes to assemble the Illumina reads into an assembly graph
