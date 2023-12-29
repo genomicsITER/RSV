@@ -484,7 +484,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
-> December 29, 2023. Figure 5 is updated. The bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure.
+> December 29, 2023. Figure 5 is updated. The bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure. Also updated the code for the <i>de novo</i> assembly.
 
 > October 11, 2023. This repository became fully public. Enjoy the reading! ;=)
 
