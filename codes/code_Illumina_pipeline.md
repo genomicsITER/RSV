@@ -34,13 +34,14 @@ This is the result of an ongoing joint-effort of the following institutions and 
   <li><a href="#4">4. Quality control of trimmed reads with FastQC</a></li>
   <li><a href="#5">5. Remove host reads using Kraken2 with humanDB database</a></li>
   <li><a href="#6">6. Multi-reference alignment with bbmap to select reference</a></li>
-  <li><a href="#7">7. Align reads</a></li>
-  <li><a href="#8">8. Trim adapters with iVar before create consensus sequences</a></li>
-  <li><a href="#9">9. Coverage analysis with Mosdepth</a></li>
-  <li><a href="#10">10. Create consensus sequence with iVar</a></li>
-  <li><a href="#11">11. Variant-calling with iVar</a></li>
-  <li><a href="#12">12. Lineage classification with NextClade</a></li>
-  <li><a href="#13">13. Multisample Alignment and Phylogenetic Analysis</a></li>
+  <li><a href="#7">7. <i>de novo</i> assembly</a></li> 
+  <li><a href="#8">8. Align reads</a></li>
+  <li><a href="#9">9. Trim adapters with iVar before create consensus sequences</a></li>
+  <li><a href="#10">10. Coverage analysis with Mosdepth</a></li>
+  <li><a href="#11">11. Create consensus sequence with iVar</a></li>
+  <li><a href="#12">12. Variant-calling with iVar</a></li>
+  <li><a href="#13">13. Lineage classification with NextClade</a></li>
+  <li><a href="#14">14. Multisample Alignment and Phylogenetic Analysis</a></li>
 </ul>
 
 
@@ -202,7 +203,26 @@ conda deactivate
 ```
 
 <a name="7"></a>
-#### 7. Align reads:
+#### 7. <i>de novo</i> assembly:
+```Bash
+       conda activate spades
+
+threads=16
+
+#Define scrubbed FASTQ files (files without human-derived reads)
+r1_scrubbed="sample.scrubbed_1.fastq"
+r2_scrubbed="sample.scrubbed_1.fastq"
+
+asmdir=${outdir}/assembly
+mkdir -p ${asmdir}
+
+spades.py -t ${threads} -1 ${r1_scrubbed} -2 ${r2_scrubbed} -o ${asmdir}
+
+conda deactivate
+```     
+
+<a name="8"></a>
+#### 8. Align reads:
 ```Bash
 # Select reference file:
 selected_reference=$( awk '{ print $3 }' sample_accession_reference_vid.txt )
@@ -242,8 +262,8 @@ samtools view -F 0x04 -b ${infile} > ${outfile}
 samtools index ${outfile}
 ```
 
-<a name="8"></a>
-#### 8. Trim adapters with iVar before create consensus sequences:
+<a name="9"></a>
+#### 9. Trim adapters with iVar before create consensus sequences:
 ```Bash
 # In case you installed iVar through conda:
 conda activate ivar
@@ -267,8 +287,8 @@ samtools index ${outfile}
 conda deactivate
 ```
 
-<a name="9"></a>
-#### 9. Coverage analysis with Mosdepth and Samtools:
+<a name="10"></a>
+#### 10. Coverage analysis with Mosdepth and Samtools:
 ```Bash
 # In case you installed Mosdepth through conda:
 conda activate mosdepth
@@ -284,8 +304,8 @@ outfile=sample.aligned-to-${type}.sorted.mapped.trimmed.sorted.depth
 samtools depth -a ${infile} > ${outfile}
 ```
 
-<a name="10"></a>
-#### 10. Create consensus sequence with iVar:
+<a name="11"></a>
+#### 11. Create consensus sequence with iVar:
 ```Bash
 # In case you installed iVar through conda:
 conda activate ivar
@@ -301,8 +321,8 @@ samtools mpileup -A -Q 0 ${infile} | ivar consensus -p ${prefix} -q 10 -t 0 -m $
 conda deactivate
 ```
 
-<a name="11"></a>
-#### 11. Variant-calling with iVar:
+<a name="12"></a>
+#### 12. Variant-calling with iVar:
 ```Bash
 # In case you installed iVar through conda:
 conda activate ivar
@@ -315,8 +335,8 @@ samtools mpileup --reference ${reference} ${infile} | ivar variants -r ${referen
 conda deactivate
 ```
 
-<a name="12"></a>
-#### 12. Lineage classification with NextClade:
+<a name="13"></a>
+#### 13. Lineage classification with NextClade:
 ```Bash
 strain=$( cat sample.strain.txt )
 
@@ -330,8 +350,8 @@ cat ${sequences_dir}/*.aligned-to-${type}.ivar_consensus.fa ${infile} > ${outfil
 # correct pathogen to run clade assignment, mutation calling, and sequence quality checks.
 ```
 
-<a name="13"></a>
-#### 13. Multisample Alignment and Phylogenetic Analysis:
+<a name="14"></a>
+#### 14. Multisample Alignment and Phylogenetic Analysis:
 ```Bash
 # Align multisample FASTA using MAFFT:
 # You should replace the --thread parameter with a proper value that suits your execution environment.
