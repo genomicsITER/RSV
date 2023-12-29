@@ -205,7 +205,10 @@ conda deactivate
 <a name="7"></a>
 #### 7. <i>de novo</i> assembly:
 ```Bash
-       conda activate spades
+
+# Unicycler uses SPAdes to assemble the Illumina reads into an assembly graph
+# In case you installed Unicycler through conda:
+conda activate spades
 
 threads=16
 
