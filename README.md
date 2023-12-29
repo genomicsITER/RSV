@@ -483,6 +483,8 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
+> December 29, 2023. Figure 5 is updated. The bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly in the case of multiple sequence alignment failure.
+
 > October 11, 2023. This repository became fully public. Enjoy the reading! ;=)
 
 > September 29, 2023. A major update of the whole repository.
