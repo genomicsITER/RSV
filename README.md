@@ -201,6 +201,7 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
   <li>Remove Human mapping-reads from your FASTQ files: <a href="https://ccb.jhu.edu/software/kraken2/">Kraken2 v.2.1.2</a>. If you have issues when downloading the database indexes, try this <a href="https://benlangmead.github.io/aws-indexes/k2" >alternative site</a> from <a href="https://github.com/BenLangmead" >BenLangmead</a>.</li>
   <li>Visualization of Kraken2 reports: <a href="https://ccb.jhu.edu/software/pavian/">Pavian v.1.0</a></li>
   <li>Alignment to multi-reference fasta: <a href="https://sourceforge.net/projects/bbmap/">BBmap</a></li>
+  <li><i>de novo</i> Assembly: <a href="https://github.com/rrwick/Unicycler">Unicycler</a></li>
   <li>Mapping of short-reads: <a href="https://github.com/lh3/bwa/">BWA v.0.7.17-r1188</a></li>
   <li>Get mapping statistics, manipulate BAM files, and generate mpileups for FASTA consensus: <a href="https://github.com/samtools/samtools">SAMtools v.1.6</a></li>
   <li>Compute the depth of coverage and other statistics: <a href="https://github.com/brentp/mosdepth/">Mosdepth v.0.3.3</a></li>
@@ -483,7 +484,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
-> December 29, 2023. Figure 5 is updated. The bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly in the case of multiple sequence alignment failure.
+> December 29, 2023. Figure 5 is updated. The bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure.
 
 > October 11, 2023. This repository became fully public. Enjoy the reading! ;=)
 
