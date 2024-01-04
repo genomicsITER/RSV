@@ -416,6 +416,7 @@ F:K272T	F:L273I	F:S275F
 <li>Goya S., Rojo G.L., Nabaes Jordar M.S., Valinotto L.E., Mistchenko A.S., Viegas M. Whole genome sequencing of respiratory syncytial (RSV) virus from clinical samples with low viral load. <a href="https://protocols.io/view/whole-genome-sequencing-of-respiratory-syncytial-r-bmhak32e">protocols.io</a>.</li>
 <li>Lin Y., Koble J., Prashar P., Pottekat A., Middle C., Kuersten S., Oberholzer M., Brazas R., Whitlock D., Schlaberg R., Schroth G.P. A sequencing and subtyping protocol for Influenza A and B viruses using Illumina® COVIDSeq™ Assay Kit. <a href="https://protocols.io/view/a-sequencing-and-subtyping-protocol-for-influenza-crv3v68n">protocols.io</a>.</li>
 <li>Iglesias-Caballero María, Camarero-Serrano Sara, Varona Sarai, Mas Vicente, Calvo Cristina, García María Luz, García-Costa Juan, Vázquez-Morón Sonia, Monzón Sara, Campoy Albert, Cuesta Isabel, Pozo Francisco, Casas Inmaculada. Genomic characterisation of respiratory syncytial virus: a novel system for whole genome sequencing and full-length G and F gene sequences. Euro Surveill. 2023;28(49):pii=2300637. <a href="https://doi.org/10.2807/1560-7917.ES.2023.28.49.2300637">doi:10.2807/1560-7917.ES.2023.28.49.2300637</a></li>
+ <li>Wilkins D, Langedijk AC, Lebbink RJ, et al. Nirsevimab binding-site conservation in respiratory syncytial virus fusion glycoprotein worldwide between 1956 and 2021: an analysis of observational study sequencing data. Lancet Infect Dis. 2023;23(7):856-866. <a href="https://doi.org/10.1016/S1473-3099(23)00062-2">doi:10.1016/S1473-3099(23)00062-2</a></li>
 </ol>
   
 <p align="right">
@@ -517,6 +518,8 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
+> January 4, 2024. Added a new section with aminoacidic substitutions of interest in the <i>F</i> gene; added some related bibliografic references.
+ 
 > December 29, 2023. Several updates follows: figure 5 is updated; the bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure; also updated the code for the <i>de novo</i> assembly; and a new reference [<a href="#References">11</a>] is added.
 
 > October 11, 2023. This repository became fully public. Enjoy the reading! ;=)
