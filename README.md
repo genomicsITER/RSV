@@ -48,7 +48,7 @@ This is the result of a continuous collaborative effort of the following Institu
            <li><a href="#Useful-Files">Useful files for the pipelines (FASTA references, BED files, etc.)</a></li>
       </ul>
   <li><a href="#Sequences-and-Classification-Results">Sequences and Classification Results</a></li>
-  <li><a href="#Substitutions">Aminoacidic substitutions in <i>F</i> gene under monitoring</a></li>
+  <li><a href="#Substitutions">Aminoacidic substitutions of interest in <i>F</i> gene</a></li>
   <li><a href="#Other-repos">Other useful repositories with resources to study RSV</a></li>
   <li><a href="#References">References</a></li>
   <li><a href="#Acknowledgements">Acknowledgements</a></li>
@@ -344,7 +344,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <!-- ------------------ SECTION 7 ------------------ -->
 
 <a name="Substitutions"></a>
-## Aminoacidic substitutions in <i>F</i> gene under monitoring
+## Aminoacidic substitutions of interest in <i>F</i> gene
 
 The following aminoacid substitutions in the fusion (F) gene of RSV (F1 and F2 subunits) are of interest due to their possible impact on the Nirsenimab and Palivizumab drugs according to [<a href="#References">13</a>] and [<a href="#References">14</a>].
 
