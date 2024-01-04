@@ -7,7 +7,7 @@
 <!-- See the "Contact us" section to collaborate with us to growth
 <!-- this repository. ;=)
 
-<!-- ------------------ SECTION ------------------ -->
+<!-- ------------------ SECTION 1 ------------------ -->
 <p align="left">
   <a href="https://github.com/genomicsITER/RSV" title="Instituto Tecnológico y de Energ&iacute;as Renovables (ITER) / Institute of Technology and Renewable Energy (ITER)">
     <img src="https://github.com/genomicsITER/RSV/blob/main/images/logos_GH.png" width="auto" /> 
@@ -29,11 +29,11 @@ This is the result of a continuous collaborative effort of the following Institu
 </ul>
 
 <hr>
-<!-- ------------------ SECTION ------------------ -->
+<!-- ------------------ SECTION 2 ------------------ -->
 
 # Table of contents #
 <ul>
-  <li><a href="#Virological-posts">A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023</a></li>
+  <li><a href="#RSV-CanaryIslands">A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023</a></li>
   <li><a href="#Protocols">Protocols for library preparation and sequencing of RSV viral genomes</a></li>
       <ul>
           <li><a href="#Illumina-protocol">Illumina-based protocol</a></li>
@@ -48,6 +48,7 @@ This is the result of a continuous collaborative effort of the following Institu
            <li><a href="#Useful-Files">Useful files for the pipelines (FASTA references, BED files, etc.)</a></li>
       </ul>
   <li><a href="#Sequences-and-Classification-Results">Sequences and Classification Results</a></li>
+  <li><a href="#Substitutions">Aminoacidic substitutions in <i>F</i> gene under monitoring</a></li>
   <li><a href="#Other-repos">Other useful repositories with resources to study RSV</a></li>
   <li><a href="#References">References</a></li>
   <li><a href="#Acknowledgements">Acknowledgements</a></li>
@@ -58,9 +59,9 @@ This is the result of a continuous collaborative effort of the following Institu
 </ul>
 
 <hr>
-<!-- ------------------ SECTION 1 ------------------ -->
+<!-- ------------------ SECTION 3 ------------------ -->
 
-<a name="Virological-posts"></a>
+<a name="RSV-CanaryIslands"></a>
 ## A draft of the first Respiratory Syncytial Virus genomes from the Canary Islands, Spain, 2022-2023
 
 The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respiratory infections in children [<a href="#References">3</a>]. The first genome sequences of RSV A and B subtypes described by us are phylogenetically related to the multiple virus genomes deposited in <a href="https://gisaid.org/">GISAID</a> that correspond to circulating RSV worldwide, as shown in Figures 1 and 2.
@@ -88,7 +89,7 @@ The Respiratory Syncytial Virus (RSV) is the leading cause of acute lower respir
 </p>
 
 <hr>
-<!-- ------------------ SECTION 2 ------------------ -->
+<!-- ------------------ SECTION 4 ------------------ -->
 
 <a name="Protocols"></a>
 ## Protocols for library preparation and sequencing of RSV genomes
@@ -152,7 +153,7 @@ Notice that some work is in progress related to the implementation of Iglesias-C
 </p>
 
 <hr>
-<!-- ------------------ SECTION 3 ------------------ -->
+<!-- ------------------ SECTION 5 ------------------ -->
 
 <a name="Bioinformatic pipelines"></a>
 ## Bioinformatic pipelines
@@ -292,7 +293,7 @@ Please, download paired BED and FASTA files for each RSV subtype.
 
 
 <hr>
-<!-- ------------------ SECTION 3 ------------------ -->
+<!-- ------------------ SECTION 6 ------------------ -->
 
 <a name="Sequences-and-Classification-Results"></a>
 ## Sequences and Classification Results ##
@@ -338,11 +339,39 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
   </a>
 </p>
 
+<hr>
+
+<!-- ------------------ SECTION 7 ------------------ -->
+
+<a name="Substitutions"></a>
+## Aminoacidic substitutions in <i>F</i> gene under monitoring
+
+The following aminoacid substitutions in the fusion (F) gene of RSV (F1 and F2 subunits) are of interest due to their possible impact on the Nirsenimab and Palivizumab drugs according to [<a href="#References">13</a>] and [<a href="#References">14</a>].
+
+> **F2 subunit**:
+F:S62G	F:N63S	F:I64V	F:K65R	F:K65Q	F:E66D
+F:T67A F:K68N	F:K68E	F:K68R	F:K68Q	F:A103V
+
+> **F1 subunit**:
+F:L172Q	F:S173L	F:L191R	F:N197D	F:N197H
+F:N197K F:N197S	F:I199M	F:D200N	F:N201S
+F:N201T	F:L204I F:I206M	F:I206T	F:I206V
+F:V207I	F:Q209K	F:Q209L F:Q209R	F:E210H
+F:Q210L	F:S211I	F:S211N	F:C212 F:D263Y
+F:M264L	F:K272M	F:K272N	F:K272Q	F:K272R
+F:K272T	F:L273I	F:S275F
+
+
+<p align="right">
+  <a href="#RSV" title="Up">
+    <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
+  </a>
+</p>
 
 <hr>
 
 
-<!-- ------------------ SECTION 6 ------------------ -->
+<!-- ------------------ SECTION 8 ------------------ -->
 
 <a name="Other-repos"></a>
 ## Other useful repositories with resources to study RSV
@@ -370,7 +399,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 
 
 <hr>
-<!-- ------------------ SECTION 7 ------------------ -->
+<!-- ------------------ SECTION 9 ------------------ -->
 
 <a name="References"></a>
 ## References ##
@@ -397,7 +426,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 
 
 <hr>
-<!-- ------------------ SECTION 8 ------------------ -->
+<!-- ------------------ SECTION 10 ------------------ -->
 
 <a name="Acknowledgements"></a>
 ## Acknowledgements ##
@@ -424,7 +453,7 @@ We also thank the authors, the laboratories that originated and submitted the ge
 
 
 <hr>
-<!-- ------------------ SECTION 9 ------------------ -->
+<!-- ------------------ SECTION 11 ------------------ -->
 
 <a name="License and Attribution"></a>
 ## License and Attribution ##
@@ -441,7 +470,7 @@ Please cite this repository as: _"Influenza repository of the Reference Laborato
 
 
 <hr>
-<!-- ------------------ SECTION 10 ------------------ -->
+<!-- ------------------ SECTION 12 ------------------ -->
 
 <a name="Participating"></a>
 ## Participating ##
@@ -466,7 +495,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 
 
 <hr>
-<!-- ------------------ SECTION 11 ------------------ -->
+<!-- ------------------ SECTION 13 ------------------ -->
 
 <a name="How-to-cite"></a>
 ## How to cite this work ##
@@ -483,7 +512,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 
 
 <hr>
-<!-- ------------------ SECTION 12 ------------------ -->
+<!-- ------------------ SECTION 14 ------------------ -->
 
 <a name="Update logs"></a>
 ## Update logs ##
