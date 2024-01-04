@@ -346,7 +346,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <a name="Substitutions"></a>
 ## Aminoacidic substitutions of interest in <i>F</i> gene
 
-The following aminoacid substitutions in the fusion (F) gene of RSV (F1 and F2 subunits) are of interest due to their possible impact on the Nirsenimab and Palivizumab drugs according to [<a href="#References">13</a>] and [<a href="#References">14</a>].
+The following aminoacid substitutions in the fusion (F) gene of RSV (F1 and F2 subunits) are of interest due to their possible impact on the Nirsenimab and Palivizumab drugs according to [<a href="#References">12</a>].
 
 > **F2 subunit**:
 F:S62G	F:N63S	F:I64V	F:K65R	F:K65Q	F:E66D
@@ -360,7 +360,6 @@ F:V207I	F:Q209K	F:Q209L F:Q209R	F:E210H
 F:Q210L	F:S211I	F:S211N	F:C212 F:D263Y
 F:M264L	F:K272M	F:K272N	F:K272Q	F:K272R
 F:K272T	F:L273I	F:S275F
-
 
 <p align="right">
   <a href="#RSV" title="Up">
@@ -518,7 +517,7 @@ Follow us on Twitter <a href="https://twitter.com/labcflores" title="Follow to @
 <a name="Update logs"></a>
 ## Update logs ##
 
-> January 4, 2024. Added a new section with aminoacidic substitutions of interest in the <i>F</i> gene; added some related bibliografic references.
+> January 4, 2024. Added a new section with aminoacidic substitutions of interest in the <i>F</i> gene; and a new reference [<a href="#References">12</a>] is added.
  
 > December 29, 2023. Several updates follows: figure 5 is updated; the bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure; also updated the code for the <i>de novo</i> assembly; and a new reference [<a href="#References">11</a>] is added.
 
