@@ -184,7 +184,7 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 <a name="Code-ONT"></a>
 **Code for Nanopore long-reads processing**
 
-<a href="https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT_pipeline.md"><img src="https://github.com/genomicsITER/monkeypox/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Oxford Nanopore Technology long-reads](https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT_pipeline.md).
+<a href="https://github.com/genomicsITER/RSV/blob/main/codes/code_ONT_pipeline.md"><img src="https://github.com/genomicsITER/RSV/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Oxford Nanopore Technology long-reads](https://github.com/genomicsITER/RSV/blob/main/codes/code_ONT_pipeline.md).
 
 <hr>
 
