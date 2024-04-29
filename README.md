@@ -43,7 +43,7 @@ This is the result of a continuous collaborative effort of the following Institu
  <li><a href="#Bioinformatic pipelines">Bioinformatic pipelines</a></li>
       <ul>
            <li><a href="#Code-Illumina">Code for Illumina short-reads processing</a></li>
-           <!-- <li><a href="#Code-ONT">Code for Nanopore long-reads processing and hybrid <i>de novo</i> assemby</a></li> -->
+           <li><a href="#Code-ONT">Code for Nanopore long-reads processing and hybrid <i>de novo</i> assemby</a></li>
            <li><a href="#List-of-software">List of bioinformatic software used in our pipelines</a></li>
            <li><a href="#Useful-Files">Useful files for the pipelines (FASTA references, BED files, etc.)</a></li>
       </ul>
@@ -179,16 +179,12 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
 
 <a href="https://github.com/genomicsITER/RSV/blob/main/codes/code_Illumina_pipeline.md"><img src="https://github.com/genomicsITER/RSV/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Illumina short reads](https://github.com/genomicsITER/RSV/blob/main/codes/code_Illumina_pipeline.md).
 
-<!-- 
-
 <hr>
 
 <a name="Code-ONT"></a>
 **Code for Nanopore long-reads processing and hybrid *de novo* genome assemby**
 
-<a href="https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT-and-HybridAssembly_pipeline.md"><img src="https://github.com/genomicsITER/monkeypox/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Oxford Nanopore Technology long-reads](https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT-and-HybridAssembly_pipeline.md).
-
--->
+<a href="https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT-and-HybridAssembly_pipeline.md"><img src="https://github.com/genomicsITER/monkeypox/blob/main/images/Code-Window-icon.png" width="32px" /></a>  See a detailed pipeline with examples of command usage for [Oxford Nanopore Technology long-reads](https://github.com/genomicsITER/monkeypox/blob/main/codes/code_ONT_pipeline.md).
 
 <hr>
 
