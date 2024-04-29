@@ -197,15 +197,20 @@ Several consensus RSV A and B sequences derived from the pipeline based on mappi
   <li>Conda manual for installation of numerous open-source tools used in these pipelines: <a href="https://docs.conda.io/en/latest/">Conda documentation</a></li>
   <li>Programming environment of general purpose: <a href="https://www.r-project.org/">R v.4.1.3</a></li>
   <li>Quality Control of Illumina reads: <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC v0.11.9</a></li>
+  <li>Quality Control of ONT reads: <a href="https://github.com/wdecoster/NanoPlot">NanoPlot v1.41.0</a></li>
   <li>Adapter trimming: <a href="https://github.com/OpenGene/fastp">fastp v0.23.2</a></li>
   <li>Remove Human mapping-reads from your FASTQ files: <a href="https://ccb.jhu.edu/software/kraken2/">Kraken2 v.2.1.2</a>. If you have issues when downloading the database indexes, try this <a href="https://benlangmead.github.io/aws-indexes/k2" >alternative site</a> from <a href="https://github.com/BenLangmead" >BenLangmead</a>.</li>
   <li>Visualization of Kraken2 reports: <a href="https://ccb.jhu.edu/software/pavian/">Pavian v.1.0</a></li>
   <li>Alignment to multi-reference fasta: <a href="https://sourceforge.net/projects/bbmap/">BBmap</a></li>
   <li><i>De novo</i> assembly using SPAdes to assemble Illumina reads into an assembly graph: <a href="https://github.com/rrwick/Unicycler">Unicycler</a></li>
+  <li>Viral assembly of long-reads: <a href="https://wonder.cdc.gov/amd/flu/irma/">IRMA v.1.1.4</a></li>
   <li>Mapping of short-reads: <a href="https://github.com/lh3/bwa/">BWA v.0.7.17-r1188</a></li>
+  <li>Mapping of long-reads: <a href="https://github.com/lh3/minimap2">Minimap2 v.2.28</a></li>
   <li>Get mapping statistics, manipulate BAM files, and generate mpileups for FASTA consensus: <a href="https://github.com/samtools/samtools">SAMtools v.1.6</a></li>
   <li>Compute the depth of coverage and other statistics: <a href="https://github.com/brentp/mosdepth/">Mosdepth v.0.3.3</a></li>
-  <li>Perform the variant calling and consensus: <a href="https://github.com/andersen-lab/ivar/">iVar v.1.3.1</a></li>
+  <li>Get coverage plot: <a href="https://github.com/jonas-fuchs/BAMdash">BAMdash v.0.2.4</a></li>
+  <li>Perform the variant-calling and consensus of short-reads: <a href="https://github.com/andersen-lab/ivar/">iVar v.1.3.1</a></li>
+  <li>Perform the trimming, variant-calling and consensus of long-reads: <a href="https://artic.readthedocs.io/en/latest/">ARTIC pipeline</a></li>
   <li>Multiple Sample Alignment: <a href="https://mafft.cbrc.jp/alignment/server/">MAFFT v.7.505</a></li>
   <li>Phylogenomic inference and tree computing: <a href="http://www.iqtree.org/">IQ-TREE v.2.2.0.3</a></li>
   <li>Framework for analyses and visualization of pathogen genome data (Nextstrain-RSV in this case): <a href="https://nextstrain.org/rsv/">Nextstrain</a></li>
