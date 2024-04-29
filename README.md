@@ -511,6 +511,8 @@ Follow us on <a href="https://twitter.com/labcflores" title="Follow to @labcflor
 <a name="Update logs"></a>
 ## Update logs ##
 
+> April 29, 2024. Completed the code section for nanopore-based long-reads processing.
+
 > April 12, 2024. Added a link to the RSV GH-repository of <a href="https://github.com/OMIC-G">OMIC-G</a>, <i>'Red de laboratorios para la aplicación de Omicas a la Microbiología Clínica en Galicia'</i>.
 
 > January 4, 2024. Added a new section with aminoacidic substitutions of interest in the <i>F</i> gene; and a new reference [<a href="#References">12</a>] is added.
