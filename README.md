@@ -106,7 +106,7 @@ Davina-Nunez et al. [<a href="#References">7</a>] have adapted the Illumina COVI
 <a name="ONT-protocol"></a>
 **Oxford Nanopore Technologies-based protocol**
 
-_Work in progress_. Come back by the end of December 2023 to find new stuff in this section.
+Sequencing libraries were created using the ONT Rapid Barcoding Kit 96 and folling the Midnight SASR-CoV-2 [<a href="#References">12</a>].
 
 <hr>
           
@@ -342,7 +342,7 @@ Sequences are being deposited at <a href="https://gisaid.org/">GISAID</a>. You m
 <a name="Substitutions"></a>
 ## Aminoacidic substitutions of interest in <i>F</i> gene
 
-The following aminoacid substitutions in the fusion (F) gene of RSV (F1 and F2 subunits) are of interest due to their possible impact on the Nirsenimab and Palivizumab drugs according to [<a href="#References">12</a>].
+The following aminoacid substitutions in the fusion (F) gene of RSV (F1 and F2 subunits) are of interest due to their possible impact on the Nirsenimab and Palivizumab drugs according to [<a href="#References">13</a>].
 
 > **F2 subunit**:
 F:S62G	F:N63S	F:I64V	F:K65R	F:K65Q	F:E66D
@@ -412,6 +412,7 @@ F:K272T	F:L273I	F:S275F
 <li>Lin Y., Koble J., Prashar P., Pottekat A., Middle C., Kuersten S., Oberholzer M., Brazas R., Whitlock D., Schlaberg R., Schroth G.P. A sequencing and subtyping protocol for Influenza A and B viruses using Illumina® COVIDSeq™ Assay Kit. <a href="https://protocols.io/view/a-sequencing-and-subtyping-protocol-for-influenza-crv3v68n">protocols.io</a>.</li>
 <li>Iglesias-Caballero María, Camarero-Serrano Sara, Varona Sarai, Mas Vicente, Calvo Cristina, García María Luz, García-Costa Juan, Vázquez-Morón Sonia, Monzón Sara, Campoy Albert, Cuesta Isabel, Pozo Francisco, Casas Inmaculada. Genomic characterisation of respiratory syncytial virus: a novel system for whole genome sequencing and full-length G and F gene sequences. <i>Euro Surveill</i>. 2023;28(49):pii=2300637. <a href="https://doi.org/10.2807/1560-7917.ES.2023.28.49.2300637">doi:10.2807/1560-7917.ES.2023.28.49.2300637</a></li>
  <li>Wilkins D, Langedijk AC, Lebbink RJ, et al. Nirsevimab binding-site conservation in respiratory syncytial virus fusion glycoprotein worldwide between 1956 and 2021: an analysis of observational study sequencing data. <i>Lancet Infect Dis</i>. 2023;23(7):856-866. <a href="https://doi.org/10.1016/S1473-3099(23)00062-2">doi:10.1016/S1473-3099(23)00062-2</a></li>
+ <li>Freed N., Murphy L., and Schwessinger B. "Midnight" SARS-CoV2 genome sequencing protocol using 1200bp amplicon primer set v2 and the Nanopore Rapid library kit. <a href="https://www.protocols.io/view/34-midnight-34-sars-cov2-genome-sequencing-protoc-14egn2q2yg5d/">protocols.io</a>.</li>
 </ol>
   
 <p align="right">
@@ -511,11 +512,11 @@ Follow us on <a href="https://twitter.com/labcflores" title="Follow to @labcflor
 <a name="Update logs"></a>
 ## Update logs ##
 
-> April 29, 2024. Completed the code section for nanopore-based long-reads processing.
+> April 29, 2024. Completed the nanopore-based long-reads processing code and tools sections; also added a new reference [<a href="#References">12</a>]. 
 
 > April 12, 2024. Added a link to the RSV GH-repository of <a href="https://github.com/OMIC-G">OMIC-G</a>, <i>'Red de laboratorios para la aplicación de Omicas a la Microbiología Clínica en Galicia'</i>.
 
-> January 4, 2024. Added a new section with aminoacidic substitutions of interest in the <i>F</i> gene; and a new reference [<a href="#References">12</a>] is added.
+> January 4, 2024. Added a new section with aminoacidic substitutions of interest in the <i>F</i> gene; and a new reference [<a href="#References">13</a>] is added.
  
 > December 29, 2023. Several updates follows: figure 5 is updated; the bioinformatic workflow is enriched with an addition step of <i>de novo</i> assembly with Unycicler (SPAdes) in the case of multiple sequence alignment failure; also updated the code for the <i>de novo</i> assembly; and a new reference [<a href="#References">11</a>] is added.
 
