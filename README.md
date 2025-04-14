@@ -500,9 +500,13 @@ Follow us on <a href="https://twitter.com/labcflores" title="Follow to @labcflor
 <a name="How-to-cite"></a>
 ## How to cite this work ##
 
-> This work has not been publised yet. See 'License and Attribution' section to cite this repository.
+This work is already available as a preprint at [medRxiv](https://www.medrxiv.org/content/10.1101/2025.04.07.25325192v1):
 
-> To use the deposited sequences at GISAID, please, acknowledge this work as recommended by GISAID. Find the 'GISAID acknowledge tables' <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/acknowledgements">here</a>.
+<ul>
+  <li><i>A bench-to-data analysis workflow for respiratory syncytial virus whole-genome sequencing with short and long-read approaches</i>. Adrian Gomez-Del Rosario, Adrian Munoz-Barrera, Julia Alcoba-Florez, Diego Garcia-Martinez de Artola, Nora Rodriguez-Garcia,  Jose M. Lorenzo-Salazar, Rafaela Gonzalez-Montelongo,  Carlos Flores, Laura Ciuffreda. doi: <a href="https://doi.org/10.1101/2025.04.07.25325192">https://doi.org/10.1101/2025.04.07.25325192</a>.</li>
+</ul>
+
+To use the deposited sequences at GISAID, please, acknowledge this work as recommended by GISAID. Find the 'GISAID acknowledge tables' <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/acknowledgements">here</a>.
 
 <p align="right">
   <a href="#RSV" title="Up">
