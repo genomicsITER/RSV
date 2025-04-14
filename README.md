@@ -521,6 +521,8 @@ To use the deposited sequences at GISAID, please, acknowledge this work as recom
 <a name="Update logs"></a>
 ## Update logs ##
 
+> April 10, 2025. The preprint is alive at medRxiv. Enjoy the reading! ;=)
+
 > April 29, 2024. Completed the nanopore-based long-reads processing code and tools sections; also added a new reference [<a href="#References">12</a>]. 
 
 > April 12, 2024. Added a link to the RSV GH-repository of <a href="https://github.com/OMIC-G">OMIC-G</a>, <i>'Red de laboratorios para la aplicación de Omicas a la Microbiología Clínica en Galicia'</i>.
