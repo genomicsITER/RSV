@@ -508,6 +508,8 @@ This work is already available as a preprint at [medRxiv](https://www.medrxiv.or
 
 To use the deposited sequences at GISAID, please, acknowledge this work as recommended by GISAID. Find the 'GISAID acknowledge tables' <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/acknowledgements">here</a>.
 
+Please, notice that a full pipeline for short and long-read approaches is also available at <a href="https://github.com/genomicsITER/nf-rsvpipeline">GitHub here</a>.
+
 <p align="right">
   <a href="#RSV" title="Up">
     <img src="https://github.com/genomicsITER/RSV/blob/main/images/home-icon.png" style="float: right; margin: 10px; padding: 2px;" />
