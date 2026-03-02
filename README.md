@@ -500,11 +500,18 @@ Follow us on <a href="https://twitter.com/labcflores" title="Follow to @labcflor
 <a name="How-to-cite"></a>
 ## How to cite this work ##
 
+This work is already published as a paper at Genome Medicine:
+
+<ul>
+  <li>A bench-to-data analysis workflow for respiratory syncytial virus whole-genome sequencing with short and long-read approaches. Adrián Gomez-Del Rosario, Adrián Muñoz-Barrera, Julia Alcoba-Florez, Diego García-Martínez de Artola, Nora Rodríguez-García, Jose M. Lorenzo-Salazar, Rafaela González-Montelongo, Carlos Flores, Laura Ciuffreda. <i>Genome Med</i> 18, 9 (2026). doi: <a href="https://doi.org/10.1186/s13073-025-01597-4">https://doi.org/10.1186/s13073-025-01597-4</a></li>
+
+<!-- 
 This work is already available as a preprint at [medRxiv](https://www.medrxiv.org/content/10.1101/2025.04.07.25325192v1):
 
 <ul>
   <li><i>A bench-to-data analysis workflow for respiratory syncytial virus whole-genome sequencing with short and long-read approaches</i>. Adrian Gomez-Del Rosario, Adrian Munoz-Barrera, Julia Alcoba-Florez, Diego Garcia-Martinez de Artola, Nora Rodriguez-Garcia,  Jose M. Lorenzo-Salazar, Rafaela Gonzalez-Montelongo,  Carlos Flores, Laura Ciuffreda. doi: <a href="https://doi.org/10.1101/2025.04.07.25325192">https://doi.org/10.1101/2025.04.07.25325192</a>.</li>
 </ul>
+-->
 
 To use the deposited sequences at GISAID, please, acknowledge this work as recommended by GISAID. Find the 'GISAID acknowledge tables' <a href="https://github.com/genomicsITER/RSV/tree/main/sequences/acknowledgements">here</a>.
 
@@ -523,7 +530,9 @@ Please, notice that a full pipeline for short and long-read approaches is also a
 <a name="Update logs"></a>
 ## Update logs ##
 
-> April 10, 2025. The preprint is alive at medRxiv. Enjoy the reading! ;=)
+> March 2, 2026. The paper is published in <i>Genome Medicine</i>. Enjoy the reading! ;=)
+
+> April 10, 2025. The preprint is alive at medRxiv.
 
 > April 29, 2024. Completed the nanopore-based long-reads processing code and tools sections; also added a new reference [<a href="#References">12</a>]. 
 
