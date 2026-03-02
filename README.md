@@ -504,6 +504,7 @@ This work is already published as a paper at Genome Medicine:
 
 <ul>
   <li>A bench-to-data analysis workflow for respiratory syncytial virus whole-genome sequencing with short and long-read approaches. Adrián Gomez-Del Rosario, Adrián Muñoz-Barrera, Julia Alcoba-Florez, Diego García-Martínez de Artola, Nora Rodríguez-García, Jose M. Lorenzo-Salazar, Rafaela González-Montelongo, Carlos Flores, Laura Ciuffreda. <i>Genome Med</i> 18, 9 (2026). doi: <a href="https://doi.org/10.1186/s13073-025-01597-4">https://doi.org/10.1186/s13073-025-01597-4</a></li>
+</ul>
 
 <!-- 
 This work is already available as a preprint at [medRxiv](https://www.medrxiv.org/content/10.1101/2025.04.07.25325192v1):
